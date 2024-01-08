@@ -444,9 +444,18 @@ form .textarea-field .error-txt {
     padding: 0 20px;
   }
 
-  .contact {
-    background-position: 50%;
+  .contact h1{
+    display: none;
   }
+  .contact {
+    
+    background-position:82.3%;
+    background-size:cover;
+    
+
+  }
+
+  
 }
 
 
