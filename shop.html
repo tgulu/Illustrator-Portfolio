@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <section id="home">
+        <header>
+            <a href="#" class="nav-logo">Ieaun Garrish </a>
+            <div class="menuToggle">
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" id="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#artist" class="nav-link" id="artwork">Artwork &nbsp; <b> ✧</b></a>
+                            <ul class="nav-dropdown">
+                                <li class="nav-items">
+                                    <a href="#publishing" class="nav-categories" id="publishing">Publishing</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="#merchandise" class="nav-categories" id="merchandise">Merchandise</a>
+                                </li>
+                                <li class="nav-items">
+                                    <a href="#sports" class="nav-categories" id="sports">Sports</a>
+                                </li>
+
+                                <li class="nav-items">
+                                    <a href="#going" class="nav-categories" id="going">On Going Projects</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#artist" class="nav-link">Shop</a>
+                        </li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+
+    <script>
+        // let menuToggle = document.querySelector(".menuToggle");
+        // let header = document.querySelector('header');
+        // menuToggle.onclick = function(){
+        //     header.classList.toggle('active');
+        // }
+        const hamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle('active');
+        })
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }))
+
+
+//         const placesPhotography = document.getElementById("places-photography");
+// placesPhotography.addEventListener("click", function () {
+//   window.location.href = "/html/places.html";
+// });
+
+// const home = document.getElementById('home');
+// home.addEventListener('click', function(){
+//     window.location.href='/testing/index.html';
+// })
+
+// const artwork = document.getElementById('artwork');
+// artwork.addEventListener('click', function(){
+//     window.location.href='index.html';
+// })
+
+// const publishing = document.getElementById('publishing');
+// publishing.addEventListener('click', function(){
+//     window.location.href='index.html';
+// })
+
+// const merchandise = document.getElementById('merchandise');
+// merchandise.addEventListener('click', function(){
+//     window.location.href='index.html';
+// })
+
+// const sports = document.getElementById('sports');
+// sports.addEventListener('click', function(){
+//     window.location.href='index.html';
+// })
+
+
+// const going = document.getElementById('going');
+// going.addEventListener('click', function(){
+//     window.location.href='index.html';
+// })
+
+
+
+
+    </script>
+</body>
+
+</html>

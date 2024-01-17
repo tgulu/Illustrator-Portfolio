@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Hedvig", Arial, Helvetica, sans-serif;
 }
 
@@ -12,6 +12,7 @@ html {
 body {
   /* background: #000; */
   min-height: 100vh;
+  background-color: pink;
 }
 
 li {
@@ -35,26 +36,26 @@ header {
   z-index: 10000;
 }
 
-.title-background{
+.title-background {
   background-image: url("/images/title.jpg");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   background-color: black;
   width: 100%;
   height: 100vh;
-  background-position:100% 75%;
+  background-position: 100% 75%;
 }
 
 .hero-background {
   background-image: url("/images/about-me.jpg");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   background-color: #fff;
   width: 100%;
   height: 100vh;
-  background-position:right;
+  background-position: right;
 }
 
 .nav-menu {
@@ -115,14 +116,14 @@ header {
   color: gold;
 }
 
-header.sticky {
+/* header.sticky {
   padding: 0.2125rem 1.25rem;
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.1),
     rgba(0, 0, 0, 0.8)
 
-  ); */
+  );
   background-color:    rgba(0, 0, 0, 0.8);
 }
 
@@ -130,7 +131,7 @@ header.sticky {
 header.sticky ul li a,
 header.sticky .logo {
   color: #fff;
-}
+} */
 
 .hamburger {
   display: none;
@@ -145,16 +146,6 @@ header.sticky .logo {
   transition: all 0.3s ease-in-out;
   background-color: black;
 }
-
-.image {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-
 
 /* Contact Section */
 
@@ -176,94 +167,6 @@ header.sticky .logo {
   margin-bottom: 10px;
   font-weight: 100;
   text-transform: uppercase;
-}
-
-.item {
-  color: white;
-}
-
-.contact form {
-  width: 800px;
-  text-align: center;
-}
-
-form .input-box {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.input-box .input-field {
-  width: 50%;
-}
-
-#subject-box{
-  width: 100%;
-
-}
-
-.field .item {
-  width: 100%;
-  padding: 18px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid white;
-  outline: none;
-  border-radius: 6px;
-  font-size: 1.5rem;
-  color: white;
-  margin: 12px 0;
-}
-
-.field.error .item {
-  border-color: #d93025;
-}
-
-.field .item::placeholder {
-  text-decoration: underline;
-  color: rgba(255, 255, 255, 1);
-}
-.field .error-txt {
-  font-size: 1.215rem;
-  color: white;
-  text-align: center;
-  margin: -3px 12px 8px 50px;
-  outline: #000;
-  background-color: rgba(255, 0, 0, 0.516);
-  border-radius: 3px;
-  display: none;
-}
-
-.field.error .error-txt {
-  display: block;
-}
-
-form .textarea-field .item {
-  resize: none;
-}
-
-form button {
-  padding: 14px 32px;
-  background: #000;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  box-shadow: 0 3px 10px 3px rgba(255, 255, 255, 0.5);
-  color: white;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 1.25rem;
-}
-
-form button:hover {
-  box-shadow: 0 3px 10px 3px rgba(255, 255, 255, 1);
-  color: white;
-  transition: all 0.9s ease-out;
-}
-
-form .textarea-field .error-txt {
-  margin-top: -10px;
 }
 
 /* Social Links */
@@ -313,7 +216,7 @@ form .textarea-field .error-txt {
 
 @media screen and (max-width: 420px) {
   header {
-    padding: 1.7rem 1.2rem;
+    padding: 1.1rem 0.2rem;
   }
 }
 
@@ -363,76 +266,23 @@ form .textarea-field .error-txt {
   .nav-menu.active {
     left: 0;
   }
-
-
-  /* Contact Section */
-
-  .contact h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-  }
-
-  .contact form {
-    width: 360px;
-    padding-right: 0.3rem;
-  }
-
-  .field .item {
-    font-size: 0.6rem;
-  }
-
-  /* Social Links */
-
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-  }
-  .social-icons {
-    margin-top: 10rem;
-  }
-
-  .copyright {
-    margin-bottom: 0.9rem;
-    font-size: 0.8rem;
-  }
-
-  .designer {
-    opacity: 1;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    font-weight: 400;
-  }
 }
 
 @media (max-width: 824px) {
-
-
   .hero-background {
     background-position: 82%;
   }
 
-  .title-background{
-    background-position: 90% 80%;
-    background-size:contain;
-    background-repeat:repeat-y;
+  .title-background {
+    background-position: 83% 80%;
+    background-size: 180%;
+    /* background-repeat:repeat-y; */
     position: relative;
-    background-color: pink;
-
-  }
-
-  header.sticky {
-    padding: 0.2125rem 1.25rem;
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 250, 250, 0.8)
-    );
+    background-color: white;
   }
 
   .bar {
-    background-color: black;
+    background-color: green;
   }
 
   .nav-logo {
@@ -444,18 +294,11 @@ form .textarea-field .error-txt {
     padding: 0 20px;
   }
 
-  .contact h1{
+  .contact h1 {
     display: none;
   }
   .contact {
-    
-    background-position:82.3%;
-    background-size:cover;
-    
-
+    background-position: 82.3%;
+    background-size: cover;
   }
-
-  
 }
-
-
