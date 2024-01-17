@@ -1,4 +1,7 @@
-
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('header');
+    navbar.classList.toggle('sticky', window.scrollY > 0);
+});
 
 const hamburger = document.querySelector(".hamburger")
 const navMenu = document.querySelector(".nav-menu")
@@ -16,7 +19,23 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 
 
-// window.addEventListener('scroll', () => {
-//     const navbar = document.querySelector('header');
-//     navbar.classList.toggle('sticky', window.scrollY > 0);
-// });
+const shop = document.getElementById('shop');
+shop.addEventListener('click', function () {
+    window.location.href = 'shop.html';
+})
+
+// const home = document.getElementById('shop');
+// shop.addEventListener('click', function () {
+//     window.location.href = 'shop.html';
+// })
+
+
+const artwork = document.getElementById('artwork');
+artwork.addEventListener('click', function () {
+    window.location.href = 'artwork.html';
+})
+
+const contact = document.getElementById('contact');
+contact.addEventListener('click', function () {
+    window.location.href = 'contact.html';
+})
