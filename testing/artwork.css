@@ -215,7 +215,6 @@ header .nav-menu .nav-item a:hover {
   height: 50px;
   border-radius: 5px;
   font-size: x-large;
-
   color: black;
   transition: 0.5s;
 }
@@ -276,11 +275,23 @@ header .nav-menu .nav-item a:hover {
     background-position: 12%;
   } */
 
-  .arrows {
+.arrows {
   position: absolute;
-  bottom: 10%;
+  top: 100px;
   left: 40px;
   z-index: 50;
+}
+
+.arrows button {
+  background-color: white;
+  border: none;
+  font-family: monospace;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: x-large;
+  color: black;
+  transition: 0.5s;
 }
 
 /* .slider{
@@ -297,15 +308,16 @@ header .nav-menu .nav-item a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
-  padding: 2rem 1.25rem 0rem;
+  padding: 1.2rem;
   gap: 10px;
   width: 70%;
   height: 290px;
   align-items: center;
-  /* padding: 0 50px; */
-  /* box-sizing: border-box;
+  /* padding: 0 50px;
+  box-sizing: border-box;
   overflow: auto; */
-  justify-content:flex-start;
+  justify-content:center;
+  
 }
 
 
@@ -320,9 +332,11 @@ header .nav-menu .nav-item a:hover {
 
   
   .slider .list .item .content h2 {
-    font-size: 60px;
-    top: 30px;
+    font-size: 2.8rem;
+    top: 40px;
   }
+
+
   .arrows {
     top: 10%;
   }
@@ -377,7 +391,8 @@ header .nav-menu .nav-item a:hover {
     background: #000;
     width: 100%;
     font-size: 1.5rem;
-    height: 100vh;
+    height: 100%;
+    height: 90vh;
     transition: all 0.3s ease-in-out;
     z-index: 100;
   }
@@ -386,8 +401,13 @@ header .nav-menu .nav-item a:hover {
     left: 0;
   }
 
-.nav-item {
+
+
+  .nav-item {
     width: 100%;
+    margin: 50px 0;
+    padding-right: 60px;
+    
   }
 
   header .nav-menu .nav-item a b {
@@ -402,7 +422,6 @@ header .nav-menu .nav-item a:hover {
     align-items: center;
     justify-content: center;
   }
-
 
   header .nav-menu .nav-dropdown {
     display: none;
@@ -434,9 +453,6 @@ header .nav-menu .nav-item a:hover {
     justify-content: center;
   }
 
-  .nav-item {
-    margin: 20px 0;
-  }
 
 }
 
