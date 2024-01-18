@@ -10,7 +10,7 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: white;
+  /* background-color: pink; */
 }
 li {
   list-style: none;
@@ -27,7 +27,7 @@ header {
   /* background-color: #43a5f6; */
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1),
     rgba(255, 255, 255, 0.1)
   );
   padding: 0 100px;
@@ -136,7 +136,6 @@ header .nav-menu .nav-item a:hover {
 }
 
 
-
 @media screen and (max-width: 678px) {
   header {
     padding: 10px 20px;
@@ -236,10 +235,6 @@ header .nav-menu .nav-item a:hover {
     justify-content: center;
   }
 
-/* body {
-  background: white;
-} */
-
   .title-background {
     background-image: url("/images/title.jpg");
     background-size:190%;
@@ -251,4 +246,22 @@ header .nav-menu .nav-item a:hover {
     height: 100vh;
     background-position: 85%;
   }
+  }
+
+
+
+
+
+
+
+
+.title-background {
+  background-image: url("/images/title.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 90vh;
+  background-position: 100% 85%;
 }

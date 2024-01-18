@@ -29,7 +29,7 @@ header {
   /* background-color: #43a5f6; */
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 1),
     rgba(255, 255, 255, 0.1)
 
   );

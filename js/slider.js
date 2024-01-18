@@ -7,17 +7,17 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 let countItem = items.length;
 let itemActive = 0;
 // event next click
-next.onclick = function(){
+next.onclick = function () {
     itemActive = itemActive + 1;
-    if(itemActive >= countItem){
+    if (itemActive >= countItem) {
         itemActive = 0;
     }
     showSlider();
 }
 //event prev click
-prev.onclick = function(){
+prev.onclick = function () {
     itemActive = itemActive - 1;
-    if(itemActive < 0){
+    if (itemActive < 0) {
         itemActive = countItem - 1;
     }
     showSlider();
@@ -26,7 +26,7 @@ prev.onclick = function(){
 let refreshInterval = setInterval(() => {
     next.click();
 }, 8000)
-function showSlider(){
+function showSlider() {
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
@@ -55,28 +55,3 @@ thumbnails.forEach((thumbnail, index) => {
 
 
 
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('header');
-    navbar.classList.toggle('sticky', window.scrollY > 0);
-});
-
-const hamburger = document.querySelector(".hamburger")
-const navMenu = document.querySelector(".nav-menu")
-
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle('active');
-})
-
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
-
-
-
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('header');
-    navbar.classList.toggle('sticky', window.scrollY > 0);
-});
