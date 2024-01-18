@@ -24,9 +24,9 @@ shop.addEventListener('click', function () {
     window.location.href = 'shop.html';
 })
 
-// const home = document.getElementById('shop');
+// const home = document.getElementById('home');
 // shop.addEventListener('click', function () {
-//     window.location.href = 'shop.html';
+//     window.location.href = 'index.html';
 // })
 
 
@@ -39,3 +39,4 @@ const contact = document.getElementById('contact');
 contact.addEventListener('click', function () {
     window.location.href = 'contact.html';
 })
+
