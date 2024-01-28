@@ -172,6 +172,13 @@
     transition: 0.5s;
   }
 
+  .slider .list .item img {
+    width: 170%;
+    height: 100%;
+    object-fit:scale-down;
+    opacity: 0.3;
+  }
+
   /* .slider{
   position: relative;
   justify-content: center;
