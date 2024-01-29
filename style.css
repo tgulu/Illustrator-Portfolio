@@ -4,7 +4,7 @@
 
 .background-img {
   background-image: url("images/title/portfolio.jpg");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 90vh;
   background-position: 0 100%;
@@ -13,8 +13,7 @@
   position: absolute;
   left: 5%;
   top: 10%;
-  width: 600px;
-  max-width: 80%;
+  width: 700px;
   z-index: 1;
 }
 
@@ -51,9 +50,13 @@
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 190% ;
+    background-size: 150%;
     height: 80vh;
-    background-position: 95% 80%;
+    background-position: 95% 95%;
+  }
+
+  .about .hero-text {
+    max-width: 80%;
   }
 
   .about .hero-text h1 {
@@ -64,7 +67,18 @@
   .about .hero-text p {
     margin: 0.9rem 0.2rem;
     width: 90%;
-    font-size: 15px;
+    font-size: 0.93rem;
     z-index: 10;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about .hero-text p {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .about .hero-text h1 {
+    font-size: 110px;
   }
 }

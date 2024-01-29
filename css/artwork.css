@@ -80,14 +80,14 @@
   animation-duration: 1.3s;
 }
 
-.arrows {
+.arrows{
   position: absolute;
   top: 90%;
   right: 50px;
   z-index: 100;
 }
 
-.arrows button {
+.arrows button{
   background-color: white;
   border: none;
   font-family: monospace;
@@ -173,9 +173,10 @@
   }
 
   .slider .list .item img {
-    width: 170%;
-    height: 100%;
-    object-fit:scale-down;
+    width: 120%;
+    height: 70%;
+    /* object-fit:scale-down; */
+    object-position: 10%;
     opacity: 0.3;
   }
 
@@ -187,16 +188,16 @@
 
   .thumbnail {
     position: absolute;
-    bottom: 140px;
+    bottom: 120px;
     left: 60px;
     z-index: 11;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     padding: 1.2rem;
     gap: 10px;
     width: 70%;
-    height: 290px;
+    height: 270px;
     align-items: center;
     /* padding: 0 50px;
   box-sizing: border-box;
@@ -205,8 +206,8 @@
   }
 
   .thumbnail .item {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 
   /* .thumbnail {
