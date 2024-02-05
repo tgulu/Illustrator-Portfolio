@@ -48,6 +48,23 @@
   animation-delay: 1.3s;
 }
 
+
+@media screen and (min-width: 350px) {
+  .about .hero-text {
+    max-width: 80%;
+  }
+
+  .about .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .about .hero-text p {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 150%;
@@ -55,7 +72,7 @@
     background-position: 95% 95%;
   }
 
-  .about .hero-text {
+  /* .about .hero-text {
     max-width: 80%;
   }
 
@@ -69,7 +86,7 @@
     width: 90%;
     font-size: 0.93rem;
     z-index: 10;
-  }
+  } */
 }
 
 @media screen and (min-width: 1920px) {
@@ -83,9 +100,7 @@
   }
 }
 
-
 @media screen and (min-width: 1920px) {
-
   .about .hero-text {
     position: absolute;
     left: 5%;
