@@ -82,3 +82,24 @@
     font-size: 110px;
   }
 }
+
+
+@media screen and (min-width: 1920px) {
+
+  .about .hero-text {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 900px;
+    z-index: 1;
+  }
+
+  .about .hero-text p {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .about .hero-text h1 {
+    font-size: 160px;
+  }
+}
