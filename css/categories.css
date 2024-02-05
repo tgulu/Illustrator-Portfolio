@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+  height: 60vh;
+  background: #fff;
+  margin-top: 65px;
+  position: relative;
+}
+
+.container h1 {
+  position:absolute;
+  font-size: 40px;
+  font-weight: normal;
+  top: -55px;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.container .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container .image-container .image {
+  height: 250px;
+  width: 350px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .image-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 0.4s linear;
+}
+
+.container .image-container .image:hover img {
+  transform: scale(1.2);
+}
+
+.container .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container .popup span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.container .popup img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container .popup img {
+    width: 95%;
+  }
+
+  .container .image-container {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .container h1 {
+
+    font-size: 30px;
+    font-weight: normal;
+    top: -64px;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+  
+  }
+}
+
+
+@media (min-width: 1920px) {
+  .container .image-container {
+    gap: 50px;
+    padding: 10px;
+  }
+
+  .container .image-container .image {
+    height: 350px;
+    width: 450px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .container .image-container .image img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    transition: 0.2s linear;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  .container .image-container {
+    gap: 70px;
+    padding: 10px;
+  }
+
+  .container .image-container .image {
+    height: 450px;
+    width: 550px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .container .image-container .image img {
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
+    transition: 0.2s linear;
+  }
+  
+}
