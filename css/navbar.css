@@ -4,13 +4,14 @@
   box-sizing: border-box;
   font-family: "Hedvig", Arial, Helvetica, sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   min-height: 90vh;
-}
+} */
 
 li {
   list-style: none;
@@ -208,10 +209,10 @@ header .nav-menu .nav-item a:hover {
     justify-content: center;
   }
 
-  .title-background {
+  /* .title-background {
     width: 100%;
     height: 90%;
     height: 100vh;
     background-position: 83% 85%;
-  }
+  } */
 }

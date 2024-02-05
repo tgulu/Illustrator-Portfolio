@@ -4,6 +4,7 @@
   margin-top: -65px;
   position: relative;
 }
+
 .slider .list .item {
   position: absolute;
   inset: 0 0 0 0;
@@ -168,9 +169,13 @@
 }
 
 @media screen and (max-width: 678px) {
-  /* .slider .list .item img{
-    background-position: 12%;
-  } */
+
+  .slider {
+    height: 100vh;
+    margin-top: -25px;
+    position: relative;
+  }
+
 
   .arrows {
     position: absolute;
