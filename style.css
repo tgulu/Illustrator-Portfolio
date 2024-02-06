@@ -70,7 +70,7 @@
   .background-img {
     background-size: 120%;
     background-position: 95% 95%;
-    height: calc(95vh - 10px);
+    height: calc(95vh - 30px);
     position: fixed;
     width: 100%;
     background-repeat: no-repeat;
