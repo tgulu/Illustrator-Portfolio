@@ -10,9 +10,8 @@
   background-image: url("images/title/titlePortolio.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 100vh;
   background-position: 0 100%;
-  display:block;
 }
 
 .about .hero-text {
@@ -74,9 +73,11 @@
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 125%;
-    /* height: 80vh; */
     background-position: 95% 95%;
-    height: calc(100vh - 40px)
+    height: calc(100vh - 50px);
+    /* position: fixed; */
+    width: 100%;
+    background-repeat: no-repeat;
   }
 
   /* .about .hero-text {
