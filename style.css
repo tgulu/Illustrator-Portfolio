@@ -1,8 +1,10 @@
 .about {
-  height: 80vh;
-  /* background-color: pink; */
+
+  background-color: pink;
   margin-top: -100px;
 }
+
+
 
 .background-img {
   background-image: url("images/title/titlePortolio.jpg");
@@ -10,6 +12,7 @@
   background-repeat: no-repeat;
   height: 50vh;
   background-position: 0 100%;
+  display:block;
 }
 
 .about .hero-text {
@@ -69,9 +72,9 @@
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 150%;
+    background-size: 155%;
     height: 80vh;
-    background-position: 100% 95%;
+    background-position: 95% 100%;
   }
 
   /* .about .hero-text {
