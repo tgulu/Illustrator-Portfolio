@@ -1,5 +1,6 @@
 .about {
   margin-top: -100px;
+  /* height: 100vh; */
   /* height: calc(95vh - 30px); */
 }
 
@@ -7,8 +8,8 @@
   background-image: url("images/title/titlePortolio.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
-  background-position: 0 100%;
+  height: 95vh;
+  background-position: 0% 100%;
 }
 
 .about .hero-text {
@@ -87,6 +88,9 @@
 
   .about .hero-text h1 {
     font-size: 110px;
+  }
+  .background-img {
+    height: 90vh;
   }
 }
 
