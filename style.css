@@ -1,6 +1,6 @@
 .about {
-  margin-top: -100px;
-  /* height: 100vh; */
+  /* margin-top: -100px; */
+  height: 40vh;
   /* height: calc(95vh - 30px); */
 }
 
@@ -70,8 +70,8 @@
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 120%;
-    background-position: 95% 70%;
+    background-size: 140%;
+    background-position: 95% 90%;
     height: calc(95vh - 20px);
     /* position: fixed; */
     width: 100%;
