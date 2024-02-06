@@ -61,13 +61,13 @@
   }
 
   .about .hero-text h1 {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .about .hero-text p {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 80%;
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
