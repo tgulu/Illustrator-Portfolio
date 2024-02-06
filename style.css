@@ -64,15 +64,15 @@
   .about .hero-text p {
     margin-top: 5px;
     width: 80%;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 120%;
-    background-position: 95% 95%;
-    height: calc(95vh - 30px);
+    background-position: 95% 70%;
+    height: calc(95vh - 20px);
     /* position: fixed; */
     width: 100%;
     background-repeat: no-repeat;
