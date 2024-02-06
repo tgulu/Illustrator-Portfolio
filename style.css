@@ -1,14 +1,17 @@
 .about {
-  height: 90vh;
+  height: 80vh;
+  /* background-color: pink; */
+  margin-top: -100px;
 }
 
 .background-img {
-  background-image: url("images/title/portfolio.jpg");
+  background-image: url("images/title/titlePortolio.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 50vh;
   background-position: 0 100%;
 }
+
 .about .hero-text {
   position: absolute;
   left: 5%;
@@ -48,7 +51,6 @@
   animation-delay: 1.3s;
 }
 
-
 @media screen and (min-width: 350px) {
   .about .hero-text {
     margin-top: 10px;
@@ -65,12 +67,11 @@
   }
 }
 
-
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 150%;
     height: 80vh;
-    background-position: 95% 95%;
+    background-position: 100% 95%;
   }
 
   /* .about .hero-text {
