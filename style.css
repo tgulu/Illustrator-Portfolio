@@ -1,10 +1,6 @@
 .about {
-
-  background-color: pink;
   margin-top: -100px;
 }
-
-
 
 .background-img {
   background-image: url("images/title/titlePortolio.jpg");
@@ -72,35 +68,20 @@
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 125%;
+    background-size: 120%;
     background-position: 95% 95%;
-    height: calc(100vh - 50px);
-    /* position: fixed; */
+    height: calc(95vh - 10px);
+    position: fixed;
     width: 100%;
     background-repeat: no-repeat;
   }
 
-  /* .about .hero-text {
-    max-width: 80%;
-  }
-
-  .about .hero-text h1 {
-    font-size: 40px;
-    color: #b8b7b7;
-  }
-
-  .about .hero-text p {
-    margin: 0.9rem 0.2rem;
-    width: 90%;
-    font-size: 0.93rem;
-    z-index: 10;
-  } */
 }
 
 @media screen and (min-width: 1440px) {
   .about .hero-text p {
     font-size: 22px;
-    width: 90%;
+    width: 80%;
   }
 
   .about .hero-text h1 {
