@@ -76,7 +76,7 @@
     background-size: 125%;
     /* height: 80vh; */
     background-position: 95% 95%;
-    height: calc(90vh - 10px)
+    height: calc(100vh - 40px)
   }
 
   /* .about .hero-text {
