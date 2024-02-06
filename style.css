@@ -1,4 +1,4 @@
-.hero {
+.about {
   height: 90vh;
 }
 
@@ -70,7 +70,7 @@
   .background-img {
     background-size: 150%;
     height: 80vh;
-    background-position: 95% 85%;
+    background-position: 95% 95%;
   }
 
   /* .about .hero-text {
