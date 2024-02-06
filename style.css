@@ -61,20 +61,22 @@
   }
 
   .about .hero-text h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .about .hero-text p {
+    margin-top: 10px;
     width: 80%;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 120%;
-    height: 80vh;
+    /* height: 80vh; */
     background-position: 95% 95%;
+    height: calc(100vh - 10px)
   }
 
   /* .about .hero-text {
