@@ -44,7 +44,7 @@
   transform: translateY(30px);
   filter: blur(20px);
   opacity: 0;
-  animation: fade-up 0.9s 0.1s ease-in-out 1 forwards;
+  animation: fade-up 0.9s 0.3s ease-in-out 1 forwards;
 }
 
 .about .hero-text p {
@@ -71,13 +71,12 @@
 @media screen and (max-width: 678px) {
   .background-img {
     background-size: 140%;
-    background-position: 95% 90%;
+    background-position: 95% 80%;
     height: calc(95vh - 20px);
     /* position: fixed; */
     width: 100%;
     background-repeat: no-repeat;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
