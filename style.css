@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 155%;
+    background-size: 120%;
     height: 80vh;
     background-position: 95% 100%;
   }
