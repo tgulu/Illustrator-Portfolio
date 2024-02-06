@@ -89,7 +89,7 @@
   } */
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .about .hero-text p {
     font-size: 22px;
     width: 90%;
