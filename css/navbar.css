@@ -30,7 +30,7 @@ header {
     rgba(255, 255, 255, 0.6),
     rgba(0, 0, 0, 0.3)
   );
-  padding: 0 100px;
+  /* padding: 0 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +112,7 @@ header .nav-menu .nav-item a:hover {
 
 @media screen and (max-width: 678px) {
   header {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 
   .hamburger {
