@@ -39,6 +39,12 @@
   }
 }
 
+p {
+  width:15rem;
+  text-align:justify;
+  text-align-last:justify;
+  }
+
 .about .hero-text p,
 .about .hero-text h1 {
   transform: translateY(30px);
@@ -81,7 +87,7 @@
 
 @media screen and (min-width: 1440px) {
   .about .hero-text p {
-    font-size: 22px;
+    font-size: 20px;
     width: 80%;
   }
 
@@ -103,7 +109,7 @@
   }
 
   .about .hero-text p {
-    font-size: 35px;
+    font-size: 38px;
     width: 100%;
   }
 
