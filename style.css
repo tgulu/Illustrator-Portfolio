@@ -5,11 +5,11 @@
 }
 
 .background-img {
-  background-image: url("images/title/titlePortolio.jpg");
-  background-size: 100%;
+  background-image: url("images/title/titleImg.jpg");
+  background-size: 50%;
   background-repeat: no-repeat;
   height: 95vh;
-  background-position: 0% 100%;
+  background-position: 100% 100%;
 }
 
 .about .hero-text {
@@ -76,8 +76,8 @@ p {
 
 @media screen and (max-width: 678px) {
   .background-img {
-    background-size: 140%;
-    background-position: 95% 80%;
+    background-size: 90%;
+    background-position: 95% 90%;
     height: calc(95vh - 20px);
     /* position: fixed; */
     width: 100%;
