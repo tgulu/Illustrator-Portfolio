@@ -87,7 +87,7 @@ p {
 
   .about .hero-text {
     margin-top: 10px;
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .about .hero-text h1 {
@@ -96,7 +96,7 @@ p {
 
   .about .hero-text p {
     margin-top: 5px;
-    width: 80%;
+    width: 75%;
     font-size: 13px;
   }
 }
