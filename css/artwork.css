@@ -35,7 +35,7 @@
   left: 10%;
   top: 20%;
   width: 500px;
-  max-width: 80%;
+  max-width: 90%;
   z-index: 1;
   /* padding-bottom: 0.9rem; */
 }
@@ -113,13 +113,13 @@
 .thumbnail {
   position: absolute;
   bottom: 50px;
-  left: 200px;
+  left: 40px;
   z-index: 11;
   display: flex;
   gap: 10px;
   width: 80%;
   height: 250px;
-  padding: 0 50px;
+  padding: 0 10px;
   box-sizing: border-box;
   overflow: auto;
   justify-content: center;
@@ -204,7 +204,7 @@
     margin: 5px 0px;
     padding: 0px 50px;
     box-sizing: border-box;
-    overflow: visible;
+    overflow: auto;
     align-items: center;
     justify-content: center;
   }
