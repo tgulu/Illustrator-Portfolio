@@ -30,10 +30,10 @@ merchandise.addEventListener('click', function () {
 })
 
 
-const shop = document.getElementById('shop');
-shop.addEventListener('click', function () {
-    window.location.href = 'shop.html';
-})
+// const shop = document.getElementById('shop');
+// shop.addEventListener('click', function () {
+//     window.location.href = 'shop.html';
+// })
 
 // const home = document.getElementById('home');
 // shop.addEventListener('click', function () {
@@ -41,25 +41,25 @@ shop.addEventListener('click', function () {
 // })
 
 
-const artwork = document.getElementById('artwork');
-artwork.addEventListener('click', function () {
-    window.location.href = 'artwork.html';
-})
+// const artwork = document.getElementById('artwork');
+// artwork.addEventListener('click', function () {
+//     window.location.href = 'artwork.html';
+// })
 
-const contact = document.getElementById('contact');
-contact.addEventListener('click', function () {
-    window.location.href = 'contact.html';
-})
+// const contact = document.getElementById('contact');
+// contact.addEventListener('click', function () {
+//     window.location.href = 'contact.html';
+// })
 
-const publishing = document.getElementById('publishing');
-publishing.addEventListener('click', function () {
-    window.location.href = 'publishing.html';
-})
+// const publishing = document.getElementById('publishing');
+// publishing.addEventListener('click', function () {
+//     window.location.href = 'publishing.html';
+// })
 
-const going = document.getElementById('going');
-going.addEventListener('click', function () {
-    window.location.href = 'project.html';
-})
+// const going = document.getElementById('going');
+// going.addEventListener('click', function () {
+//     window.location.href = 'project.html';
+// })
 
 
 document.querySelectorAll('.image-container img').forEach(image => {

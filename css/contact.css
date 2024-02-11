@@ -1,5 +1,5 @@
 .title-background {
-  background-image: url("/images/title/end.jpg");
+  background-image: url("/images/title/end.webp");
   background-size:cover;
   background-repeat: no-repeat;
   position: relative;
@@ -13,12 +13,12 @@
  display: none;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 900px) {
 
 
   .mobile-background {
     display: flex;
-    background-image: url("/images/title/contact.jpg");
+    background-image: url("/images/title/contact.webp");
     background-size:240%;
     background-repeat: no-repeat;
     position: relative;
