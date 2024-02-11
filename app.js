@@ -29,6 +29,11 @@ merchandise.addEventListener('click', function () {
     window.location.href = 'merchandise.html';
 })
 
+const graphic = document.getElementById('graphic');
+graphic.addEventListener('click', function () {
+    window.location.href = 'graphic.html';
+})
+
 
 // const shop = document.getElementById('shop');
 // shop.addEventListener('click', function () {
