@@ -82,7 +82,7 @@ p {
 
 @media screen and (min-width: 350px) {
   .text-box1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .about .hero-text {
@@ -127,7 +127,7 @@ p {
 
 @media screen and (min-width: 1920px) {
   .text-box2 {
-    padding: 40px;
+    padding: 10px;
   }
 
   .about .hero-text {

@@ -25,7 +25,7 @@ prev.onclick = function () {
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
-}, 8000)
+}, 9000)
 function showSlider() {
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
@@ -41,7 +41,7 @@ function showSlider() {
     clearInterval(refreshInterval);
     refreshInterval = setInterval(() => {
         next.click();
-    }, 5000)
+    }, 6000)
 }
 
 // click thumbnail
