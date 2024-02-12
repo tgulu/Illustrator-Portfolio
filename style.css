@@ -85,6 +85,10 @@ p {
     margin-bottom: 10px;
   }
 
+  .text-box2{
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
   .about .hero-text {
     margin-top: 10px;
     max-width: 70%;
