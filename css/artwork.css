@@ -45,10 +45,16 @@
   letter-spacing: 10px;
 }
 
+p:nth-child(1) {
+  font-family: luminari;
+
+}
+
 .slider .list .item .content h2 {
   font-size: 100px;
   margin: 0;
   color: #eee;
+  font-family: luminari;
 }
 
 #projectTitle {
@@ -159,6 +165,7 @@
   inset: auto 10px 10px 10px;
   color: black;
   background-color: white;
+  font-family: luminari;
 }
 
 @media screen and (max-width: 500px) {
