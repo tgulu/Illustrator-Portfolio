@@ -267,16 +267,14 @@ p:nth-child(1) {
   } */
 
   .slider .list .item .content h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
-    /* color: #eee;    */
-    color:purple;
-
-    font-family: luminari;
+    color: #fff;
+   
   }
 
   .slider .list .item .content p:nth-child(1) {
-    color:palevioletred;
+    color: #eee;   
     font-size: 19px;
   }
 
