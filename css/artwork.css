@@ -267,7 +267,7 @@ p:nth-child(1) {
   } */
 
   .slider .list .item .content h2 {
-    font-size: 28px;
+    font-size: 30px;
     margin: 0;
     /* color: #eee;    */
     color:purple;
@@ -281,8 +281,8 @@ p:nth-child(1) {
   }
 
   .slider .list .item .content p:nth-child(3) {
-    color:lawngreen;
-    font-size: 16px;
+    color: #eee;   
+    font-size: 15px;
   }
 
 }
