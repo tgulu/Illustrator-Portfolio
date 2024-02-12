@@ -40,6 +40,9 @@
   /* padding-bottom: 0.9rem; */
 }
 
+
+/* text */
+
 .slider .list .item .content p:nth-child(1) {
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -49,6 +52,8 @@ p:nth-child(1) {
   font-family: luminari;
 }
 
+
+
 .slider .list .item .content h2 {
   font-size: 100px;
   margin: 0;
@@ -56,19 +61,20 @@ p:nth-child(1) {
   font-family: luminari;
 }
 
-#projectTitle {
-  font-size: 85px;
+
+
+.slider .list .item .content p:nth-child(3) {
+  color: green;
+  font-size: 24px;
 }
+
 
 .slider .list .item.active {
   opacity: 1;
   z-index: 10;
 }
 
-.slider .list .item .content p {
-  color: white;
-  font-size: 24px;
-}
+
 
 @keyframes showContent {
   to {
@@ -206,6 +212,24 @@ p:nth-child(1) {
     max-width: 85%;
   }
 
+  .slider .list .item img {
+    width: 120%;
+    height: 70%;
+    object-position: 10%;
+    opacity: 0.3;
+  }
+
+  /* .slider .list .item .content h2,
+  #projectTitle {
+    font-size: 2.8rem;
+    top: 40px;
+  } */
+
+  .thumbnail .item .content {
+    font-size: 12px;
+    color: white;
+    background-color: black;
+  }
   .arrows {
     position: absolute;
     top: 40px;
@@ -225,42 +249,34 @@ p:nth-child(1) {
     transition: 0.5s;
   }
 
-  .slider .list .item img {
-    width: 120%;
-    height: 70%;
-    object-position: 10%;
-    opacity: 0.3;
-  }
-
-  /* .slider .list .item .content h2,
-  #projectTitle {
-    font-size: 2.8rem;
-    top: 40px;
-  } */
-
-  .thumbnail .item .content {
-    font-size: 12px;
-    color: white;
-    background-color: black;
-  }
-
-
 }
 
 
 @media screen and (max-width: 900px) {
 
-  .slider .list .item .content p:nth-child(1)
+  /* .slider .list .item .content p:nth-child(1)
   #projectTitle {
-    font-size: 1.2rem;
+    font-size: 19px;
     top: 40px;
-  }
+  } */
 
 
-
-  .slider .list .item .content p:nth-child(2) {
+  /* .slider .list .item .content p {
     color: green;
     font-size: 15px;
+  } */
+
+  .slider .list .item .content h2 {
+    font-size: 46px;
+    margin: 0;
+    color: #eee;
+    color: aqua;
+    font-family: luminari;
+  }
+
+  .slider .list .item .content p:nth-child(3) {
+    color: green;
+    font-size: 20px;
   }
 
 }
@@ -268,6 +284,10 @@ p:nth-child(1) {
 
 
 @media screen and (min-width: 1400) {
+
+  #projectTitle {
+    font-size: 85px;
+  }
   .arrows {
     top: 20%;
     right: 50px;
