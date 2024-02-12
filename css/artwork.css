@@ -249,25 +249,6 @@ p:nth-child(1) {
 
 
 @media screen and (max-width: 900px) {
-
-  /* .slider .list .item .content p:nth-child(1)
-  #projectTitle {
-    font-size: 19px;
-    top: 40px;
-  } */
-
-
-  /* .slider .list .item .content p {
-    color: green;
-    font-size: 15px;
-  } */
-
-  .slider .list .item .content h2 {
-    font-size: 39px;
-    color: #fff;
-   
-  }
-
   .slider .list .item .content #projectTitle{
     font-size: 36px;
   }
@@ -275,6 +256,11 @@ p:nth-child(1) {
   .slider .list .item .content p:nth-child(1) {
     color: #eee;   
     font-size: 19px;
+  }
+
+  .slider .list .item .content h2 {
+    font-size: 39px;
+    color: #fff;
   }
 
   .slider .list .item .content p:nth-child(3) {
@@ -287,14 +273,9 @@ p:nth-child(1) {
 @media screen and (min-width: 1400) {
   .slider .list .item .content h2 {
     font-size: 60px;
-    /* color: #eee; */
-    color: red;
+    color: #eee;  
     font-family: luminari;
   }
-
-  /* #projectTitle {
-    font-size: 85px;
-  } */
 
   .arrows {
     top: 20%;
@@ -304,16 +285,24 @@ p:nth-child(1) {
 
 }
 @media (min-width: 1920px){
-  .slider .list .item .content p {
-    font-size: 45px;
+  .slider .list .item .content p:nth-child(1) {
+    font-size: 60px;
+    color: #fff;
   }
 
   .slider .list .item .content h2 {
     font-size: 100px;
-    /* color: #eee; */
-    color: aqua;
+    color: #eee;  
     font-family: luminari;
   }
+
+  .slider .list .item .content p:nth-child(3) {
+    font-size: 45px;
+    color: #fff;
+    width: 1200px;
+  }
+
+
 
   .slider .list .item .content {
     left: 5%;
