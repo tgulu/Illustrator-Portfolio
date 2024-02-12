@@ -182,14 +182,12 @@
 
   .thumbnail .item {
     width: 130px;
-    height: 150px;
+    height: 140px;
     filter: brightness(0.5);
     transition: 0.5s;
     flex-shrink: 0;
   }
-/* }
 
-@media screen and (max-width: 678px) { */
 
   .slider {
     height: 100vh;
@@ -226,31 +224,15 @@
   .slider .list .item img {
     width: 120%;
     height: 70%;
-    /* object-fit:scale-down; */
     object-position: 10%;
     opacity: 0.3;
   }
-
-  /* .slider{
-  position: relative;
-  justify-content: center;
-  align-items: center;
-} */
-
-
-
-  /* .thumbnail {
-    justify-content: start;
-  } */
 
   .slider .list .item .content h2, #projectTitle {
     font-size: 2.8rem;
     top: 40px;
   }
 
-  /* .arrows {
-    top: 10%;
-  } */
   .thumbnail .item .content {
     font-size: 12px;
     color: white;
