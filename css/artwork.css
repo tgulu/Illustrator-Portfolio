@@ -47,7 +47,6 @@
 
 p:nth-child(1) {
   font-family: luminari;
-
 }
 
 .slider .list .item .content h2 {
@@ -199,12 +198,31 @@ p:nth-child(1) {
     margin-top: -25px;
     position: relative;
   }
+
   .slider .list .item .content {
     margin-bottom: 5px;
     left: 10%;
     top: 15%;
     width: 500px;
     max-width: 85%;
+  }
+
+  .slider .list .item .content p {
+    color: white;
+    font-size: 18px;
+  }
+
+  .slider .list .item img {
+    width: 120%;
+    height: 70%;
+    object-position: 10%;
+    opacity: 0.3;
+  }
+
+  .slider .list .item .content h2,
+  #projectTitle {
+    font-size: 2.8rem;
+    top: 40px;
   }
 
   .arrows {
@@ -226,18 +244,7 @@ p:nth-child(1) {
     transition: 0.5s;
   }
 
-  .slider .list .item img {
-    width: 120%;
-    height: 70%;
-    object-position: 10%;
-    opacity: 0.3;
-  }
 
-  .slider .list .item .content h2,
-  #projectTitle {
-    font-size: 2.8rem;
-    top: 40px;
-  }
 
   .thumbnail .item .content {
     font-size: 12px;
@@ -245,6 +252,27 @@ p:nth-child(1) {
     background-color: black;
   }
 }
+
+
+@media screen and (max-width: 900px) {
+
+  .slider .list .item .content h2,
+  #projectTitle {
+    font-size: 2.8rem;
+    top: 40px;
+  }
+
+  .slider .list .item .content {
+    margin-bottom: 5px;
+    left: 10%;
+    top: 15%;
+    width: 500px;
+    max-width: 85%;
+  }
+
+}
+
+
 
 @media screen and (min-width: 1400) {
   .arrows {
