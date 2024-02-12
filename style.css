@@ -84,16 +84,18 @@ p {
 
 @media screen and (min-width: 350px) {
   .text-box1 {
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .text-box2{
     background-color: rgba(255, 255, 255, 0.7.8);
+    padding: 4px;
   }
 
   .about .hero-text {
     margin-top: 10px;
-    max-width: 70%;
+    max-width: 60%;
   }
 
   .about .hero-text h1 {
@@ -102,8 +104,8 @@ p {
 
   .about .hero-text p {
     margin-top: 5px;
-    width: 75%;
-    font-size: 13px;
+    width: 70%;
+    font-size: 11px;
   }
 }
 
