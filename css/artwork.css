@@ -243,18 +243,25 @@ p:nth-child(1) {
     color: white;
     background-color: black;
   }
+
+
 }
 
 
 @media screen and (max-width: 900px) {
 
-  .slider .list .item .content h2,
+  .slider .list .item .content p:nth-child(1)
   #projectTitle {
-    font-size: 2.8rem;
+    font-size: 1.2rem;
     top: 40px;
   }
 
 
+
+  .slider .list .item .content p:nth-child(2) {
+    color: green;
+    font-size: 15px;
+  }
 
 }
 
