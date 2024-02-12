@@ -50,6 +50,8 @@
   font-size: 110px;
   margin: 0;
   color: #b8b7b7;
+  font-family: luminari;
+  text-transform: uppercase;
 }
 
 @keyframes fade-up {

@@ -1,18 +1,19 @@
+@font-face {
+  font-family: luminari;
+  src: url(fonts/Luminari-Regular.ttf);
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Hedvig", Arial, Helvetica, sans-serif;
-  /* background-color: violet; */
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* body {
-  min-height: 90vh;
-} */
 
 li {
   list-style: none;
@@ -41,11 +42,18 @@ header {
 
 .nav-logo {
   color: #000;
-  font-weight: 300;
-  font-size: 2.9rem;
-  padding-right: 7rem;
-  text-decoration: none;
+  font-family: luminari;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+.nav-logo span {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: luminari;
   letter-spacing: 2px;
   transition: 0.6s;
 }
@@ -64,6 +72,8 @@ header {
 header .nav-menu .nav-item a {
   color: #000;
   font-size: 1.2rem;
+  font-family: luminari;
+  text-transform: uppercase;
   font-weight: 200;
   padding: 20px 25px;
   text-decoration: none;
@@ -134,6 +144,14 @@ header .nav-menu .nav-item a:hover {
 
   .nav-logo {
     font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+
+  .nav-logo span {
+    color: #000;
+    font-weight: 100;
+    font-size: 0.8rem;
     letter-spacing: 1px;
   }
 
@@ -216,4 +234,37 @@ header .nav-menu .nav-item a:hover {
     height: 100vh;
     background-position: 83% 85%;
   } */
+}
+
+@media screen and (min-width: 1400px) {
+  .nav-logo {
+    color: #000;
+    font-weight: 300;
+    font-size: 1.9rem;
+    padding-right: 7rem;
+    margin-right: 1.9rem;
+  }
+  
+  .nav-logo span {
+    font-size: 0.9rem;
+    font-family: luminari;
+  }  
+}
+
+@media screen and (min-width: 1900px) {
+  .nav-logo {
+    font-weight: 300;
+    font-size: 2.9rem;
+    padding-right: 7rem;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+  
+  .nav-logo span {
+    font-weight: 100;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+
 }
