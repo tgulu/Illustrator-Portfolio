@@ -70,8 +70,6 @@ p:nth-child(1) {
   z-index: 10;
 }
 
-
-
 @keyframes showContent {
   to {
     transform: translateY(0);
@@ -244,9 +242,7 @@ p:nth-child(1) {
     color: black;
     transition: 0.5s;
   }
-
 }
-
 
 @media screen and (max-width: 900px) {
   .slider .list .item .content #projectTitle{
@@ -267,7 +263,6 @@ p:nth-child(1) {
     color: #eee;   
     font-size: 15px;
   }
-
 }
 
 @media screen and (min-width: 1400) {
@@ -282,8 +277,8 @@ p:nth-child(1) {
     right: 50px;
     z-index: 100;
   }
-
 }
+
 @media (min-width: 1920px){
   .slider .list .item .content p:nth-child(1) {
     font-size: 60px;
@@ -301,9 +296,7 @@ p:nth-child(1) {
     color: #fff;
     width: 1200px;
   }
-
-
-
+  
   .slider .list .item .content {
     left: 5%;
     top: 20%;
