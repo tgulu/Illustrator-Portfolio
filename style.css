@@ -90,7 +90,7 @@ p {
 
   .text-box2{
     background-color: rgba(255, 255, 255, 0.7.8);
-    padding: 4px;
+    padding: 2px;
   }
 
   .about .hero-text {
@@ -133,7 +133,31 @@ p {
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1900px) {
+  .text-box2 {
+    padding: 8px;
+  }
+
+  /* .about .hero-text {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 1000px;
+    z-index: 1;
+  } */
+
+  .about .hero-text p {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .about .hero-text h1 {
+    font-size: 100px;
+  }
+
+}
+
+@media screen and (min-width: 2010px) {
   .text-box2 {
     padding: 10px;
   }
@@ -147,11 +171,15 @@ p {
   }
 
   .about .hero-text p {
-    font-size: 38px;
+    font-size: 32px;
     width: 100%;
   }
 
   .about .hero-text h1 {
-    font-size: 160px;
+    font-size: 105px;
   }
+}
+
+@media screen and (min-width: 2560px) {
+
 }
