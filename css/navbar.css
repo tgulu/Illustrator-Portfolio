@@ -27,23 +27,27 @@ header {
   position: relative;
   width: 100%;
   min-height: 66px;
-  padding: 0 120px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   text-transform: uppercase;
   z-index: 100;
+}
+
+.mobile-titles{
+  display: none;
 }
 
 .nav-logo {
   color: #000;
   font-family: luminari;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
-  letter-spacing: 0.9px;
+  letter-spacing: 1.9px;
   transition: 0.6s;
   font-weight: 200;
 }
+
 
 .nav-title {
   /* color: #9d9d9d; */
@@ -60,31 +64,6 @@ header {
   position: relative;
   float: left;
 }
-
-/* .content-wrap{
-  display: inline-block;
-} */
-
-
-/* nav-links */
-/* header .nav-menu .nav-item a {
-  color: #000;
-  font-size: 1.2rem;
-  font-family: luminari;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 20px 25px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-header .nav-menu .nav-item a b {
-  font-size: 1.1rem;
-}
-
- */
-
 
 
 .nav-item a{
@@ -117,18 +96,6 @@ header ul li:hover ul {
 }
 
 
-/* works on navbar doesnt do much */
-/* header ul li ul li {
-  position: relative;
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: green;
-} */
-
-/* header .nav-menu .nav-item a:hover {
-  background: rgba(21, 20, 20, 0.2);
-} */
-
 .nav-item a:hover{
   background: rgba(21, 20, 20, 0.2);
 }
@@ -148,9 +115,9 @@ header ul li:hover ul {
 }
 
 @media screen and (max-width: 678px) {
-  header {
-    padding: 10px 10px;
-  }
+  /* header {
+    padding: 0px 10px;
+  } */
 
   .hamburger {
     display: block;
@@ -168,27 +135,29 @@ header ul li:hover ul {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+ /* display nav logo for mobile versions */
+  /* .mobile-titles{
+    display:contents;
+  } */
+
+  /* .web-titles{
+    display: none;
+  } */
+
+
   .nav-logo {
-    letter-spacing: 1px;
-    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-size: 1.1rem;
+    /* margin-right: 3.3rem; */
+    margin-right: 0.9rem;
   }
   
   .nav-title {
-    font-size: 1rem;
-    letter-spacing: 1px;
+    font-size: 0.8rem;
+    /* letter-spacing: 1px; */
+    margin-left: 3.9rem;
   }
 
-/* nav-links  */
-  /* header .nav-menu .nav-item a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding: 30px 30px;
-    margin-right: 20px ;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-  } */
 
   .nav-item a{
     color: #fff;
@@ -225,17 +194,9 @@ header ul li:hover ul {
     padding-right: 60px;
   }
 
-
-/* nav-links b */
-  /* header .nav-menu .nav-item a b {
-    font-size: 1.2rem;
-    font-weight: 200;
-  } */
-
   .nav-item a b{
     font-size: 0.9rem;
     font-weight: 200;
-
   }
 
   .nav-item a {
@@ -263,49 +224,42 @@ header ul li:hover ul {
     width: 100%;
   }
 
-  /* header ul li a b {
-    font-size: 0.9rem;
-    font-weight: 200;
-  } */
-
-  /* header .nav-menu .nav-item a {
-    align-items: center;
-    justify-content: center;
-  } */
-
   .nav-item a{
     align-items: center;
     justify-content: center;
-
   }
-
 }
 
 @media screen and (min-width: 1400px) {
+  header {
+    padding: 0 40px;
+  }
+
   .nav-logo {
     font-size: 2.6rem;
   }
   
   .nav-title {
     font-weight: 100;
-    font-size: 1.1rem;
-    margin-left: -0.8px;
+    font-size: 1.7rem;
+    margin-left: 2rem;
     letter-spacing: 1.3px;
   }
 }
 
-
 @media screen and (min-width: 1900px) {
+  header {
+    padding: 0 80px;
+  }
   .nav-logo {
     font-weight: 300;
     font-size: 2.9rem;
-    padding-right: 7rem;
+    padding-right: 10rem;
   }
-
   .nav-title {
     font-weight: 100;
     font-size: 2rem;
-    margin-left: -1.8px;
+
   }
 
 }

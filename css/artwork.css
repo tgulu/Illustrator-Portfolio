@@ -1,4 +1,12 @@
 /* slider */
+/* 
+body{
+  height: 100vh;
+  background-color: #000;
+  background-image: url("/images/artwork/guide.webp");
+} */
+
+
 .slider {
   height: 100vh;
   margin-top: -65px;
