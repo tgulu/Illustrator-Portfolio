@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/html/purchase.css">
+</head>
+<body>
+    <div class="item-container" id="blur">
+        <div class="content">
+            <!-- <h2>WORDs</h2> -->
+            <img src="/images/shop/rokerPark.webp"  alt="">
+             <a href="#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>THE SIMPSONS</h2><p>“welcome to Springfield” A4 poster print</p>
+        <a href="/html/contact.html">Buy</a>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+
+
+<!-- 2nd one -->
+
+    <div class="item-container" id="blur">
+        <div class="content">
+            <img src="/images/shop/oxford.webp"  alt="">
+             <a href="#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>NAS</h2><p>Manor Ground Oxford United Poster</p>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+
+    <script>
+        function toggle(){
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            let popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
