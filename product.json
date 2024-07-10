@@ -1,0 +1,49 @@
+[
+    {
+        "id":1,
+        "name":200,
+        "image":"/images/shop/futurama.webp" 
+    },
+    {
+        "id":2,
+        "name":200,
+        "image":"/images/shop/gunners.webp" 
+    },
+    {
+        "id":3,
+        "name":200,
+        "image":"images/shop/oxford.webp"
+    },
+
+    {
+        "id":4,
+        "name":200,
+        "image":"images/shop/rokerPark.webp"
+    },
+    {
+        "id":5,
+        "name":200,
+        "image":"images/shop/worldCup.webp"
+    },
+
+    {
+        "id":6,
+        "name":200,
+        "image":"/images/shop/seagulls.webp" 
+    },
+    {
+        "id":7,
+        "name":200,
+        "image":"images/shop/simpsons.webp" 
+    }
+
+]
+
+
+
+
+
+
+
+
+
