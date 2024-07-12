@@ -65,8 +65,11 @@ closeCart.addEventListener('click', () => {
 
 // Function to add product data to the HTML
 const addDataToHTML = () => {
+    // Clear the current product list
     listProductHTML.innerHTML = '';
+    // Check if there are products to display
     if (listProducts.length > 0) {
+        // Loop through each product and create a corresponding HTML element
         listProducts.forEach(product => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
@@ -86,7 +89,9 @@ const addDataToHTML = () => {
 // Event listener to handle adding products to cart
 listProductHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
+    // Check if the clicked element is an "Add to Cart" button
     if (positionClick.classList.contains('add-cart')) {
+        // Get the product ID from the parent element's dataset
         let product_id = positionClick.parentElement.dataset.id;
         addToCart(product_id);
     }
@@ -94,20 +99,25 @@ listProductHTML.addEventListener('click', (event) => {
 
 // Function to add products to the cart
 const addToCart = (product_id) => {
+    // Find the index of the product in the cart array
     let postionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
+    // If the cart is empty, add the first product
     if (carts.length <= 0) {
         carts = [{
             product_id: product_id,
             quantity: 1
         }];
-    } else if (postionThisProductInCart < 0) {
+    } else if (postionThisProductInCart < 0) { 
+        // If the product is not already in the cart, add it
         carts.push({
             product_id: product_id,
             quantity: 1
         });
     } else {
+        // If the product is already in the cart, increase its quantity
         carts[postionThisProductInCart].quantity += 1;
     }
+    // Update the cart display and store the updated cart in local storage
     addCartToHTML();
     addCartToMemory();
 };
@@ -119,14 +129,18 @@ const addCartToMemory = () => {
 
 // Function to update the cart display in the HTML
 const addCartToHTML = () => {
+    // Clear the current cart display
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
+    // Check if there are items in the cart
     if (carts.length > 0) {
+        // Loop through each item in the cart and create a corresponding HTML element
         carts.forEach(cart => {
             totalQuantity += cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
             newCart.dataset.id = cart.product_id;
+            // Find the product information for the cart item
             let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
             let info = listProducts[positionProduct];
             newCart.innerHTML = `
@@ -148,40 +162,52 @@ const addCartToHTML = () => {
             listCartHTML.appendChild(newCart);
         });
     }
+    // Update the cart icon with the total quantity of items
     iconCartSpan.innerHTML = totalQuantity;
 };
 
 // Event listener to handle quantity changes in the cart
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
+    // Check if the clicked element is a "minus" or "plus" button
     if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
+        // Get the product ID from the parent element's dataset
         let product_id = positionClick.parentElement.parentElement.dataset.id;
         let type = 'minus';
+        // Check if the clicked button is a "plus" button
         if (positionClick.classList.contains('plus')) {
             type = 'plus';
         }
+        // Change the quantity of the corresponding product in the cart
         changeQuantity(product_id, type);
     }
 });
 
 // Function to change the quantity of a product in the cart
 const changeQuantity = (product_id, type) => {
+    // Find the index of the product in the cart array
     let postionItemInCart = carts.findIndex((value) => value.product_id == product_id);
+    // Check if the product is in the cart
     if (postionItemInCart >= 0) {
         switch (type) {
             case 'plus':
+                // Increase the quantity of the product
                 carts[postionItemInCart].quantity += 1;
                 break;
             default:
+                // Decrease the quantity of the product
                 let valueChange = carts[postionItemInCart].quantity - 1;
+                // If the quantity is greater than 0, update it
                 if (valueChange > 0) {
                     carts[postionItemInCart].quantity = valueChange;
                 } else {
+                    // If the quantity is 0, remove the product from the cart
                     carts.splice(postionItemInCart, 1);
                 }
                 break;
         }
     }
+    // Update the cart display and store the updated cart in local storage
     addCartToMemory();
     addCartToHTML();
 };
@@ -205,3 +231,4 @@ const initApp = () => {
 
 // Call the initialisation function to set up the app
 initApp();
+
