@@ -110,7 +110,7 @@ listProductHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if (positionClick.classList.contains('add-cart')) {
         let product_id = positionClick.parentElement.dataset.id;
-        alert(product_id);
+        // alert(product_id);
         addToCart(product_id)
     }
 })
@@ -131,14 +131,22 @@ const addToCart = (product_id) => {
         carts[postionThisProductInCart].quantity = carts[postionThisProductInCart].quantity + 1;
     }
     addCartToHTML();
+    addCartToMemory();
+}
+
+const addCartToMemory = () => {
+    localStorage.setItem('cart', JSON.stringify(carts));
 }
 
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
+    let totalQuantity = 0;
     if (carts.length > 0) {
         carts.forEach(cart => {
+            totalQuantity = totalQuantity + cart.quantity;
             let newCart = document.createElement('div');
             newCart.classList.add('item');
+            newCart.dataset.id = cart.product_id;
             let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
             let info = listProducts[positionProduct];
             newCart.innerHTML = `
@@ -150,7 +158,7 @@ const addCartToHTML = () => {
                 ${info.name} 
             </div>
             <div class="total-price">
-                 ${info.price} 
+                 ${info.price * cart.quantity}  
             </div>
             <div class="quantity">
                 <span class="minus"><</span>
@@ -161,7 +169,44 @@ const addCartToHTML = () => {
             listCartHTML.appendChild(newCart);
         })
     }
+    iconCartSpan.innerHTML = totalQuantity
 }
+
+
+listCartHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if(positionClick.classList.contains('minus') || positionClick.classList.contains ('plus')){
+        let product_id = positionClick.parentElement.dataset.id;
+        let type = 'minus';
+        if(positionClick.classList.contains('plus')){
+            type = 'plus'
+        }
+        changeQuantity( product_id, type);
+    }
+})
+
+const changeQuantity = ( product_id, type) => {
+    let postionItemInCart = carts.findIndex((value) => value.product_id == product_id)
+    if(postionItemInCart >= 0){
+        switch (type) {
+            case 'plus':
+                carts[postionItemInCart].quantity = carts[postionItemInCart].quantity + 1;
+                break;
+        
+            default:
+                let valueChange = carts[postionItemInCart].quantity - 1;
+                if( valueChange > 0){
+                    carts[postionItemInCart].quantity = valueChange;
+                } else{
+                    carts.splice(postionItemInCart,1);
+                }
+                break;
+        }
+    }
+    addCartToMemory();
+    addCartToHTML();
+}
+
 
 const initApp = () => {
     fetch('/product.json')
@@ -170,6 +215,12 @@ const initApp = () => {
             listProducts = data;
             console.log(listProducts)
             addDataToHTML()
+
+            //get cart from memory
+            if(localStorage.getItem('cart')){
+                carts = JSON.parse(localStorage.getItem('cart'));
+                addCartToHTML();
+            }
 
         })
 
