@@ -1,125 +1,4 @@
-/* .container {
-  position: absolute;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(0%, -70%);
-  padding: 20px;
-  z-index: 2; 
-  height: 60vh;
-  background: transparent;
-  margin-top: 65px;
-}
-
-.container h1 {
-  position:absolute;
-  font-size: 40px;
-  font-weight: normal;
-  top: -55px;
-  padding: 15px;
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.container h2 {
-  display: none;
-}
-
-.container .image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
- 
-}
-
-.container .image-container .image {
-  height: 250px;
-  width: 350px;
-  border: 10px solid #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  background-color: #fff;
-}
-.container .image-container .image img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  transition: 0.4s linear;
-}
-
-.container .image-container .image:hover img {
-  transform: scale(1.2);
-}
-
-
-@media (min-width: 1920px) {
-  .container .image-container {
-    gap: 50px;
-    padding: 10px;
-  }
-
-  .container .image-container .image {
-    height: 350px;
-    width: 450px;
-    border: 10px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .container .image-container .image img {
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
-    transition: 0.2s linear;
-  }
-  
-}
-
-@media (min-width: 1920px) {
-  .container .image-container {
-    gap: 70px;
-    padding: 10px;
-  }
-
-  .container .image-container .image {
-    height: 450px;
-    width: 550px;
-    border: 10px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .container .image-container .image img {
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
-    transition: 0.2s linear;
-  }
-  
-} */
-
-
-
-/* .title-background {
-  background-image: url("/images/shop/oasis.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  background-color: white; 
-  width: 100%;
-  height: 92vh;
-  background-position: 45%;
-} */
-
-
-
+/* Container styling */
 .container {
   width: 1200px;
   max-width: 90vw;
@@ -129,22 +8,26 @@
   transition: transform .5s;
 }
 
-svg{
+/* SVG styling */
+svg {
   width: 30px;
 }
 
-header{
+/* Header styling */
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* padding: 20px 0; */
 }
 
+/* Header icon cart positioning */
 header .icon-cart {
  position: relative;
 }
 
-header .icon-cart span{
+/* Header icon cart span styling */
+header .icon-cart span {
   display: flex;
   width: 30px;
   height: 30px;
@@ -158,33 +41,39 @@ header .icon-cart span{
   right: -20px;
 }
 
-.list-product .item img{
+/* List product item image styling */
+.list-product .item img {
   width: 90%;
   filter: drop-shadow(0 3px 5px #0009);
 }
 
-.list-product{
+/* List product grid styling */
+.list-product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.list-product .item{
+/* List product item styling */
+.list-product .item {
   background-color: #eeeee6;
   padding: 20px 10px;
   border-radius: 20px;
 }
 
-.list-product .item h2{
+/* List product item heading styling */
+.list-product .item h2 {
   font-weight: 500;
   font-size: large;
 }
 
-.list-product .item .price{
+/* List product item price styling */
+.list-product .item .price {
   font-size: small;
 }
 
-.list-product .item button{
+/* List product item button styling */
+.list-product .item button {
   background-color: #353432;
   color: #eee;
   padding: 5px 10px;
@@ -194,15 +83,18 @@ header .icon-cart span{
   cursor: pointer;
 }
 
-section.show-cart .cart-tab{
-  inset: 0 0 0 auto;
+/* Show cart section tab styling */
+section.show-cart .cart-tab {
+  inset: 50px 0 0 auto;
 }
 
-section.show-cart .container{
+/* Show cart section container transformation */
+section.show-cart .container {
   transform: translateX(-250px);
 }
 
-.cart-tab{
+/* Cart tab styling */
+.cart-tab {
   width: 470px;
   background-color: #353432;
   color: #eee;
@@ -214,33 +106,39 @@ section.show-cart .container{
   transition: .5s;
 }
 
-.cart-tab h1{
+/* Cart tab heading styling */
+.cart-tab h1 {
   padding: 20px;
   margin: 0;
   font-weight: 300;
 }
 
-.cart-tab .btn{
+/* Cart tab button grid styling */
+.cart-tab .btn {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.cart-tab .btn button{
+/* Cart tab button styling */
+.cart-tab .btn button {
   background-color: #E8BC0E;
   border: none;
   font-weight: 500;
   cursor: pointer;
 }
 
-.cart-tab .btn .close{
-background-color: #eee;
+/* Cart tab close button styling */
+.cart-tab .btn .close {
+  background-color: #eee;
 }
 
-.cart-tab .list-cart .item img{
+/* Cart tab list item image styling */
+.cart-tab .list-cart .item img {
   width: 100%;
 }
 
-.cart-tab .list-cart .item{
+/* Cart tab list item grid styling */
+.cart-tab .list-cart .item {
   display: grid;
   grid-template-columns: 160px 90px 30px 1fr;
   gap: 10px;
@@ -248,7 +146,8 @@ background-color: #eee;
   align-items: center;
 }
 
-.list-cart .quantity span{
+/* List cart quantity span styling */
+.list-cart .quantity span {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -258,37 +157,35 @@ background-color: #eee;
   cursor: pointer;
 }
 
-.list-cart .quantity span:nth-child(2){
+/* List cart quantity span child styling */
+.list-cart .quantity span:nth-child(2) {
   background-color: transparent;
   color: #eee;
 }
 
-.list-cart .item:nth-child(even){
+/* List cart even item background color */
+.list-cart .item:nth-child(even) {
   background-color: #eee1;
-  
 }
 
-.list-cart{
+/* List cart overflow handling */
+.list-cart {
   overflow: auto;
 }
 
-.list-cart::-webkit-scrollbar{
+/* List cart scrollbar styling */
+.list-cart::-webkit-scrollbar {
   width: 0;
 }
 
+/* Media queries */
 
-
-
-/* phone screens */
-
+/* Phone screens */
 @media (max-width: 768px) {
-
 
 }
 
-
-/* desktop screens */
+/* Desktop screens */
 @media (min-width: 1920px) {
 
-  
 }
