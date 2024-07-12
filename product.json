@@ -2,28 +2,28 @@
     {
         "id":1,
         "name":"seagulls",
-        "price":200,
+        "price":21.99,
         "image":"/images/shop/seagulls.webp",
         "alt":"Brighton and Hove Seagulls Poster" 
     },
     {
         "id":2,
         "name":"gunners",
-        "price":200,
+        "price":10.99,
         "image":"/images/shop/gunners.webp",
         "alt":"Arsenal Gunners Poster" 
     },
     {
         "id":3,
         "name":"oxford",
-        "price":200,
+        "price":18.99,
         "image":"/images/shop/oxford.webp",
         "alt":"Manor Ground Oxford United Poster"
     },
     {
         "id":4,
         "name":"worldCup",
-        "price":200,
+        "price":24.99,
         "image":"/images/shop/worldCup.webp",
         "alt":"World Cup Poster"
     
@@ -31,7 +31,7 @@
     {
         "id":5,
         "name":"simpsons",
-        "price":200,
+        "price":22.99,
         "image":"/images/shop/simpsons.webp",
         "alt":"Simpsons Poster" 
       
@@ -39,7 +39,7 @@
     {
         "id":6,
        "name":"futurama",
-        "price":200,
+        "price":16.99,
         "image":"/images/shop/futurama.webp",
         "alt":"Futura Poster"
     }
