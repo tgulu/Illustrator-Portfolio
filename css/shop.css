@@ -54,9 +54,11 @@ header .icon-cart span {
 
 /* List product item styling */
 .list-product .item {
-  background-color: #eeeee6;
+  /* background-color: #ababa2c4; */
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFic3RyYWN0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
   padding: 10px 10px;
   border-radius: 20px;
+  color: #ffffff;
 }
 
 /* List product item heading styling */
@@ -94,7 +96,7 @@ section.show-cart .container {
 /* Cart tab styling */
 .cart-tab {
   width: 470px;
-  background-color: #353432;
+  background-color: #353233;
   color: #eee;
   position: fixed;
   inset: 50px -470px 0 auto;
@@ -194,7 +196,6 @@ section.show-cart .container {
   }
 
   .list-product .item {
-    background-color: #eeeee6;
     padding: 10px 10px;
     border-radius: 20px;
   }
@@ -207,7 +208,6 @@ section.show-cart .container {
 
 @media screen and (min-width: 1400) {
   .list-product .item {
-    background-color: #eeeee6;
     padding: 10px 10px;
     border-radius: 20px;
   }
@@ -230,7 +230,6 @@ section.show-cart .container {
   }
 
   .list-product .item {
-    background-color: #eeeee6;
     padding: 30px 10px;
     border-radius: 20px;
   }
