@@ -67,14 +67,64 @@ graphic.addEventListener('click', function () {
 // })
 
 
-document.querySelectorAll('.image-container img').forEach(image => {
-    image.onclick = () => {
-        document.querySelector('.popup').style.display = 'block';
-        document.querySelector('.popup img').src = image.getAttribute('src');
+let iconCart = document.querySelector('.icon-cart');
+let body = document.querySelector('section');
+let closeCart = document.querySelector('.close');
+let listProductHTML = document.querySelector('.list-product');
+let listCartHTML = document.querySelector('.list-cart');
+
+let listProducts = [];
+let carts = [];
+    
+iconCart.addEventListener('click', () => {
+    body.classList.toggle('show-cart')
+})
+closeCart.addEventListener('click', () => {
+    body.classList.toggle('show-cart')
+})
+
+const addDataToHTML = () => {
+    listProductHTML.innerHTML = '';
+    if(listProducts.length > 0){
+        listProducts.forEach(product =>{
+            let newProduct = document.createElement('div');
+            newProduct.classList.add('item');
+            newProduct.dataset.id = product.id;
+            newProduct.innerHTML = `
+            <img src="${product.image}" alt="${product.alt}">
+            <h2>${product.name}</h2>
+            <div class="price">£${product.price}</div>
+            <button class="add-cart"> 
+                Add to Cart
+            </button>`;
+            listProductHTML.appendChild(newProduct)
+        })
     }
-
-});
-
-document.querySelector('.popup span').onclick = () => {
-    document.querySelector('.popup').style.display = 'none';
 }
+
+listProductHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if(positionClick.classList.contains('add-cart')){
+        let product_id = positionClick.parentElement.dataset.id;
+        alert(product_id);
+        addToCart(product_id)
+    }
+})
+
+const addToCart = (product_id) =>{
+
+}
+
+const initApp = () => {
+    fetch('/product.json')
+    .then(response => response.json())
+    .then(data => {
+        listProducts = data;
+        console.log(listProducts)
+        addDataToHTML()
+        
+    })
+
+}
+initApp();
+    
