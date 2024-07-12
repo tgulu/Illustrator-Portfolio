@@ -182,8 +182,17 @@ section.show-cart .container {
 
 /* Phone screens */
 @media (max-width: 768px) {
+  .list-product{
+    grid-template-columns: repeat(2,1fr);
+  }
 
 }
+/* Ipad */
+/* @media screen and (max-width: 992px) {
+  .list-product{
+    grid-template-columns: repeat(3,1fr);
+  }
+} */
 
 /* Desktop screens */
 @media (min-width: 1920px) {
