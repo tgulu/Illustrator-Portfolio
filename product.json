@@ -1,62 +1,47 @@
 [
     {
         "id":1,
-        "name":"futurama",
+        "name":"seagulls",
         "price":200,
-        "image":"/images/shop/futurama.webp",
-        "alt":"futura artwork"
-      
+        "image":"/images/shop/seagulls.webp",
+        "alt":"Brighton and Hove Seagulls Poster" 
     },
     {
         "id":2,
         "name":"gunners",
         "price":200,
         "image":"/images/shop/gunners.webp",
-        "alt":"arsenal gunners poster" 
+        "alt":"Arsenal Gunners Poster" 
     },
     {
         "id":3,
         "name":"oxford",
         "price":200,
-        "image":"images/shop/oxford.webp",
-        "alt":"manor ground oxford united poster"
+        "image":"/images/shop/oxford.webp",
+        "alt":"Manor Ground Oxford United Poster"
     },
-
     {
         "id":4,
-        "name":"rokerPark",
+        "name":"worldCup",
         "price":200,
-        "image":"images/shop/rokerPark.webp",
-        "alt":"roker park t-shirt"
+        "image":"/images/shop/worldCup.webp",
+        "alt":"World Cup Poster"
+    
     },
     {
         "id":5,
-        "name":"worldCup",
+        "name":"simpsons",
         "price":200,
-        "image":"images/shop/worldCup.webp",
-        "alt":"World Cup Poster"
+        "image":"/images/shop/simpsons.webp",
+        "alt":"Simpsons Poster" 
+      
     },
-
     {
         "id":6,
-        "name":"seagulls",
+       "name":"futurama",
         "price":200,
-        "image":"/images/shop/seagulls.webp",
-        "alt":"brighton and hove seagulls poster" 
-    },
-    {
-        "id":7,
-        "name":"simpsons",
-        "price":200,
-        "image":"images/shop/simpsons.webp",
-        "alt":"Simpsons Poster" 
-    },
-    {
-        "id":8,
-        "name":"simpsons",
-        "price":200,
-        "image":"images/shop/simpsons.webp",
-        "alt":"Simpsons Poster"
+        "image":"/images/shop/futurama.webp",
+        "alt":"Futura Poster"
     }
 
 ]
