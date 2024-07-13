@@ -11,10 +11,10 @@
   transition: transform 0.5s;
 }
 
-header .title, .title-cart {
+header .title,
+.title-cart {
   font-family: luminari;
 }
-
 
 /* SVG styling */
 svg {
@@ -28,7 +28,6 @@ header {
   justify-content: space-between;
   padding: 20px 100px;
 }
-
 
 /* Header icon cart positioning */
 header .icon-cart {
@@ -199,6 +198,23 @@ section.show-cart .cart-tab {
     font-size: 0.9rem;
   }
 
+  /* Header icon cart span styling */
+  header .icon-cart span {
+    z-index: -1000;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+  }
+
+  /* Show cart section tab styling */
+  section.show-cart .cart-tab {
+    inset: 0 0 0 auto;
+  }
+
   .list-product {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -212,6 +228,57 @@ section.show-cart .cart-tab {
 
   .list-product .item img {
     width: 60%;
+  }
+
+  /* Cart tab styling */
+  .cart-tab {
+    width: 390px;
+    background-color: #353233;
+    color: #eee;
+    grid-template-rows: 50px 1fr 60px;
+    padding-left: 10px;
+    transition: 0.5s;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+
+  /* Cart tab heading styling */
+  .cart-tab h1 {
+    /* padding: 25px; */
+    margin-bottom: 100px;
+    font-weight: 300;
+  }
+
+  /* Cart tab button grid styling */
+  .cart-tab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Cart tab button styling */
+  .cart-tab .btn button {
+    background-color: #e8bc0e;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  /* Cart tab close button styling */
+  .cart-tab .btn .close {
+    background-color: #eee;
+  }
+
+  /* Cart tab list item image styling */
+  .cart-tab .list-cart .item img {
+    width: 75%;
+  }
+
+  /* Cart tab list item grid styling */
+  .cart-tab .list-cart .item {
+    display: grid;
+    grid-template-columns: 160px 90px 30px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
   }
 }
 
