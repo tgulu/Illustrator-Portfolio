@@ -1,3 +1,8 @@
+@font-face {
+  font-family: luminari;
+  src: url("/fonts/Luminari-Regular.ttf");
+}
+
 /* Container styling */
 .container {
   margin: auto;
@@ -5,6 +10,11 @@
   padding-top: 10px;
   transition: transform 0.5s;
 }
+
+header .title, .title-cart {
+  font-family: luminari;
+}
+
 
 /* SVG styling */
 svg {
@@ -16,8 +26,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 20px 0; */
+  padding: 20px 100px;
 }
+
 
 /* Header icon cart positioning */
 header .icon-cart {
@@ -253,7 +264,7 @@ section.show-cart .cart-tab {
 
   /* Container styling */
   .container {
-    width: 70%;
+    width: 80%;
   }
 
   .list-product {
@@ -269,6 +280,6 @@ section.show-cart .cart-tab {
   }
 
   .list-product .item img {
-    width: 80%;
+    width: 70%;
   }
 }
