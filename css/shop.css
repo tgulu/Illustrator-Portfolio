@@ -86,11 +86,7 @@ header .icon-cart span {
 /* Show cart section tab styling */
 section.show-cart .cart-tab {
   inset: 50px 0 0 auto;
-}
-
-/* Show cart section container transformation */
-section.show-cart .container {
-  transform: translateX(-250px);
+  z-index: 1000; /* Ensure it is above other content */
 }
 
 /* Cart tab styling */
@@ -104,6 +100,7 @@ section.show-cart .container {
   display: grid;
   grid-template-rows: 70px 1fr 70px;
   transition: 0.5s;
+  z-index: 1000; /* Ensure it is above other content */
 }
 
 /* Cart tab heading styling */
@@ -149,11 +146,11 @@ section.show-cart .container {
 /* List cart quantity span styling */
 .list-cart .quantity span {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: #eee;
   color: #555;
-  border-radius: 10%;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -207,6 +204,8 @@ section.show-cart .container {
   }
 }
 
+/* Large desktop screens */
+
 @media screen and (min-width: 1200px) {
   /* Container styling */
   .container {
@@ -235,13 +234,17 @@ section.show-cart .container {
   }
 }
 
-@media screen and (min-width: 1400) {
+/* Extra large desktop screens */
+
+@media screen and (min-width: 1400px) {
   .list-product .item {
     padding: 10px 10px;
     border-radius: 20px;
     color: #ffffff;
   }
 }
+
+/* Ultra-wide screens */
 
 @media (min-width: 1920px) {
   header .title {
