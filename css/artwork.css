@@ -273,6 +273,7 @@ p:nth-child(1) {
   }
 }
 
+/* change 1400 to 1400px */
 @media screen and (min-width: 1400) {
   .slider .list .item .content h2 {
     font-size: 60px;

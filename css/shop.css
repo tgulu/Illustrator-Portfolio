@@ -47,7 +47,6 @@ header .icon-cart span {
   position: absolute;
   top: 50%;
   right: -20px;
-  z-index: -1000;
 }
 
 /* List product item image styling */
@@ -203,16 +202,19 @@ section.show-cart .cart-tab {
     font-size: 0.9rem;
   }
 
+
   /* Header icon cart span styling */
   header .icon-cart span {
-    z-index: -1000;
+    z-index: 1000;
     justify-content: center;
     align-items: center;
-
+    color: #000000;
+    background-color: transparent;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     right: -20px;
+    z-index: -200;
   }
 
   /* Show cart section tab styling */
