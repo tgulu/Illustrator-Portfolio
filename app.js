@@ -48,6 +48,7 @@ let closeCart = document.querySelector('.close');
 let listProductHTML = document.querySelector('.list-product');
 let listCartHTML = document.querySelector('.list-cart');
 let iconCartSpan = document.querySelector('.icon-cart span');
+let totalPriceElement = document.getElementById('total-price'); // Select the total price element
 
 // Initialising arrays for products and carts
 let listProducts = [];
@@ -164,6 +165,23 @@ const addCartToHTML = () => {
     }
     // Update the cart icon with the total quantity of items
     iconCartSpan.innerHTML = totalQuantity;
+
+    // Calculate and update the total price
+    cartTotal();
+};
+
+// Function to calculate the total price of the cart and update the total price element
+const cartTotal = () => {
+    let totalPrice = 0;
+    carts.forEach(cart => {
+        // Find the product information for the cart item
+        let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
+        let info = listProducts[positionProduct];
+        // Calculate the total price for each product in the cart
+        totalPrice += info.price * cart.quantity;
+    });
+    // Update the total price element
+    totalPriceElement.innerHTML = totalPrice.toFixed(2);
 };
 
 // Event listener to handle quantity changes in the cart
@@ -231,4 +249,3 @@ const initApp = () => {
 
 // Call the initialisation function to set up the app
 initApp();
-
