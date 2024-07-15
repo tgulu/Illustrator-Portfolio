@@ -12,7 +12,7 @@
 }
 
 header .title,
-.title-cart {
+.title-cart, #total-price {
   font-family: luminari;
 }
 
@@ -47,6 +47,7 @@ header .icon-cart span {
   position: absolute;
   top: 50%;
   right: -20px;
+  z-index: -1000;
 }
 
 /* List product item image styling */
@@ -111,13 +112,16 @@ section.show-cart .cart-tab {
   grid-template-rows: 70px 1fr 70px;
   transition: 0.5s;
   z-index: 1000; /* Ensure it is above other content */
+
 }
 
 /* Cart tab heading styling */
 .cart-tab h1 {
+  font-family: luminari;
   padding: 20px;
   margin: 0;
   font-weight: 300;
+  
 }
 
 /* Cart tab button grid styling */
@@ -131,6 +135,7 @@ section.show-cart .cart-tab {
   background-color: #e8bc0e;
   border: none;
   font-weight: 500;
+  font-family: luminari;
   cursor: pointer;
 }
 
