@@ -32,6 +32,7 @@ header {
 /* Header icon cart positioning */
 header .icon-cart {
   position: relative;
+  /* z-index: -100 ; */
 }
 
 /* Header icon cart span styling */
@@ -196,16 +197,15 @@ section.show-cart .cart-tab {
   .container {
     width: 800px;
     max-width: 90vw;
+    height: 80vh;
   }
 
   header .title {
     font-size: 0.9rem;
   }
 
-
   /* Header icon cart span styling */
   header .icon-cart span {
-    z-index: 1000;
     justify-content: center;
     align-items: center;
     color: #000000;
@@ -214,7 +214,6 @@ section.show-cart .cart-tab {
     position: absolute;
     top: 50%;
     right: -20px;
-    z-index: -200;
   }
 
   /* Show cart section tab styling */
@@ -230,11 +229,11 @@ section.show-cart .cart-tab {
     padding: 10px 10px;
     border-radius: 20px;
     color: #000000;
-    margin-bottom: 10px;
+    margin-top: 40px;
   }
 
   .list-product .item img {
-    width: 60%;
+    width: 70%;
   }
 
   /* Cart tab styling */
