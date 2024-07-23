@@ -1,12 +1,4 @@
-/* slider */
-/* 
-body{
-  height: 100vh;
-  background-color: #000;
-  background-image: url("/images/artwork/guide.webp");
-} */
-
-
+/* Styles for the slider component */
 .slider {
   height: 100vh;
   margin-top: -65px;
@@ -15,11 +7,12 @@ body{
 
 .slider .list .item {
   position: absolute;
-  inset: 0 0 0 0;
+  inset: 0 0 0 0; /* shorthand for top, right, bottom, left */
   overflow: hidden;
   opacity: 0;
   transition: 0.5s;
 }
+
 .slider .list .item img {
   width: 100%;
   height: 100%;
@@ -48,9 +41,7 @@ body{
   /* padding-bottom: 0.9rem; */
 }
 
-
-/* text */
-
+/* Styles for text within the slider */
 .slider .list .item .content p:nth-child(1) {
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -72,7 +63,7 @@ p:nth-child(1) {
   font-size: 24px;
 }
 
-
+/* Styles for active slider item */
 .slider .list .item.active {
   opacity: 1;
   z-index: 10;
@@ -103,6 +94,7 @@ p:nth-child(1) {
   animation-duration: 1.3s;
 }
 
+/* Styles for navigation arrows */
 .arrows {
   position: absolute;
   top: 90%;
@@ -127,6 +119,7 @@ p:nth-child(1) {
   color: #eee;
 }
 
+/* Styles for thumbnail section */
 .thumbnail {
   position: absolute;
   bottom: 50px;
@@ -175,6 +168,9 @@ p:nth-child(1) {
   font-family: luminari;
 }
 
+/* Media queries for responsive design */
+
+/* Styles for small screens (max-width: 500px) */
 @media screen and (max-width: 500px) {
   .thumbnail {
     left: 9px;
@@ -206,6 +202,7 @@ p:nth-child(1) {
     margin-top: -25px;
     position: relative;
   }
+
   .slider .list .item .content {
     margin-bottom: 5px;
     left: 10%;
@@ -221,17 +218,12 @@ p:nth-child(1) {
     opacity: 0.3;
   }
 
-  /* .slider .list .item .content h2,
-  #projectTitle {
-    font-size: 2.8rem;
-    top: 40px;
-  } */
-
   .thumbnail .item .content {
     font-size: 12px;
     color: white;
     background-color: black;
   }
+
   .arrows {
     position: absolute;
     top: 40px;
@@ -252,13 +244,14 @@ p:nth-child(1) {
   }
 }
 
+/* Styles for medium screens (max-width: 900px) */
 @media screen and (max-width: 900px) {
-  .slider .list .item .content #projectTitle{
+  .slider .list .item .content #projectTitle {
     font-size: 36px;
   }
 
   .slider .list .item .content p:nth-child(1) {
-    color: #eee;   
+    color: #eee;
     font-size: 19px;
   }
 
@@ -268,16 +261,16 @@ p:nth-child(1) {
   }
 
   .slider .list .item .content p:nth-child(3) {
-    color: #eee;   
+    color: #eee;
     font-size: 15px;
   }
 }
 
-/* change 1400 to 1400px */
+/* Styles for large screens (min-width: 1400px) */
 @media screen and (min-width: 1400px) {
   .slider .list .item .content h2 {
     font-size: 60px;
-    color: #eee;  
+    color: #eee;
     font-family: luminari;
   }
 
@@ -288,7 +281,8 @@ p:nth-child(1) {
   }
 }
 
-@media (min-width: 1920px){
+/* Styles for extra-large screens (min-width: 1920px) */
+@media (min-width: 1920px) {
   .slider .list .item .content p:nth-child(1) {
     font-size: 60px;
     color: #fff;
@@ -296,7 +290,7 @@ p:nth-child(1) {
 
   .slider .list .item .content h2 {
     font-size: 100px;
-    color: #eee;  
+    color: #eee;
     font-family: luminari;
   }
 
@@ -305,7 +299,7 @@ p:nth-child(1) {
     color: #fff;
     width: 1200px;
   }
-  
+
   .slider .list .item .content {
     left: 5%;
     top: 20%;
