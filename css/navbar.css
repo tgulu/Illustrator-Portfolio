@@ -36,6 +36,7 @@ header {
 
 
 /* look ino line height units */
+/* Combining pseudo-classes and pseudo-elements  */
 .mobile-titles{
   display: none;
 }
@@ -179,7 +180,7 @@ header ul li:hover ul {
   .nav-menu {
     position: absolute;
     left: -100%;
-    top: 66px;
+    top: 30px;
     background: #000;
     /* background: pink; */
     width: 100%;
@@ -197,6 +198,7 @@ header ul li:hover ul {
     width: 100%;
     margin: 40px 0;
     padding-right: 60px;
+    line-height: 60px;
   }
 
   .nav-item a b{
