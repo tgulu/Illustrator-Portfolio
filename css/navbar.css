@@ -146,6 +146,8 @@ header ul li:hover ul {
  
  .mobile-titles{
     display:block;
+    padding-top: 0.2rem;
+    line-height: 1.3rem;
   }
 
   .web-titles{
