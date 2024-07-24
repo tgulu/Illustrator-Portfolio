@@ -27,7 +27,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #000 4%, transparent);
+  background-image: linear-gradient(to top, #000 3%, transparent);
 }
 
 .slider .list .item .content {
@@ -106,8 +106,8 @@ p:nth-child(1) {
   background-color: white;
   border: none;
   font-family: monospace;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   border-radius: 5px;
   font-size: x-large;
   color: black;
@@ -268,15 +268,14 @@ p:nth-child(1) {
 /* Styles for large screens (min-width: 1400px) */
 @media screen and (min-width: 1400px) {
   .slider .list .item .content h2 {
-    font-size: 60px;
+    font-size: 50px;
     color: #eee;
     font-family: luminari;
   }
 
   .arrows {
-    top: 20%;
-    right: 50px;
-    z-index: 100;
+    top: 54%;
+    right: 19.6%;
   }
 }
 
@@ -294,7 +293,7 @@ p:nth-child(1) {
   }
 
   .slider .list .item .content p:nth-child(3) {
-    font-size: 45px;
+    font-size: 30px;
     color: #fff;
     width: 1200px;
   }
@@ -307,4 +306,10 @@ p:nth-child(1) {
     z-index: 1;
     padding-bottom: 0.9rem;
   }
+
+  .arrows {
+    top:72.8%;
+    right: 35%;
+  }
+
 }
