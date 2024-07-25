@@ -1,0 +1,22 @@
+:root {
+    /* --header: 3rem; */
+    --header: 66px;
+    --footer: 40px;
+    --main: calc(100vh - calc(var(--header) + var(--footer)));
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0px solid transparent;
+  }
+  
+  #header {
+    height: var(--header);
+    background: #111111;
+  }
+
+  #footer {
+    height: var(--footer);
+    background: #232323;
+  }
