@@ -114,15 +114,28 @@
   border: 1px solid var(--color-red);
 }
 
-/* Footer */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
 
+.hamburger {
+  display: none;
+}
+
+/* Footer */
 #footer {
   height: var(--footer);
   background: var(--color-light-black);
   /* border: 1px solid var(--color-red); */
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 678px) {
   .nav-logo {
     position: absolute;
     left: 0.5rem;
@@ -137,25 +150,82 @@
     top: 1.8rem;
   }
 
+  /* stop animation for underline */
   .nav-menu .nav-link::after {
     display: none;
   }
 
-  #header {
-    /* height: var(--small-header); */
-    padding: 10px 20px;
-    /* background-color: green; */
+  .hamburger {
+    display: block;
   }
-  /* #header .nav-menu{ */
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #header {
+    padding: 10px 20px;
+  }
+
+  /* box parent for links for pages */
+  #header .nav-menu li {
+    width: 100%;
+    margin: 60px 0;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  /* link for pages */
+  #header .nav-menu li a{
+    color: green;
+    font-size: 1.2rem;
+  }
+
+  /* .nav-item a{
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding: 30px 30px;
+    margin-right: 20px ;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  /*.nav-menu{ */
   #header nav {
     position: absolute;
     z-index: 100;
     width: 100%;
     top: 66px;
-    left: 0;
-    background: var(--color-white);
+    left: -100%;
+    /* left: 0; */
+    background: var(--color-black);
+    transition: all 0.3s ease-in-out;
   }
 
+  /* .nav-menu.active { */
+  #header nav.active {
+    left: 0;
+  }
+
+
+  #header .nav-menu b{
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+  /* old code */
   /* .nav-menu .nav-link{ */
   #header nav ul li {
     width: 100%;
@@ -171,6 +241,7 @@
     border: 0.1px solid var(--color-black);
     background: var(--color-grey);
   }
+
   /* .menu-toggle {
     position: relative;
     width: 40px;
@@ -201,8 +272,6 @@
     background: var(--color-light-black);
     transform: translateY(12px);
   } */
-
-
 }
 
 /* @media screen and (min-width: 1400px) {
