@@ -1,9 +1,9 @@
 :root {
   --header: 66px;
-  --footer: 30px;
+  --footer: 90px;
   --main: calc(100vh - calc(var(--header) + var(--footer)));
 
-  --color-light-white: #ffffff;
+  --color-light-white: #f9f5f5;
   --color-light-black: #232323;
   --color-black: #000000;
   --color-grey: #6c6c70ad;
@@ -38,8 +38,6 @@
 
 .nav-logo {
   color: var(--color-black);
-  font-size: 1.75rem;
-  padding-left: 10rem;
   font-weight: 500;
   text-decoration: none;
   font-family: luminari;
@@ -57,7 +55,7 @@
   font-family: luminari;
 }
 
-.nav-menu a{
+.nav-menu a {
   color: var(--color-light-black);
   font-size: 1.1rem;
   padding: 20px 25px;
@@ -70,49 +68,73 @@
 
 /* Underline animation for links */
 
-.nav-menu .nav-link::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    display: block;
-    bottom: 14px;
-    left: 20px;
-    opacity: 0;
-    width: 0;
-    background-color: var(--color-black);
-    transition: all 0.5s ease-in-out;
-    pointer-events: none;
+.nav-menu .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  display: block;
+  bottom: 14px;
+  left: 20px;
+  opacity: 0;
+  width: 0;
+  background-color: var(--color-black);
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
 }
 
 .nav-menu .nav-link:hover:after,
 .nav-menu .nav-link:focus::after {
-    opacity: 1;
-    width: 70%;
+  opacity: 1;
+  width: 70%;
 }
 
 .dropdown {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-color: var(--color-black);
-    display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-black);
+  display: none;
 }
 
-.nav-menu li:hover .dropdown{
-    display: block;
+.nav-menu li:hover .dropdown {
+  display: block;
 }
-
-
 
 .dropdown a {
-    color: var(--color-light-white);
+  color: var(--color-light-white);
 }
 
-
+.nav-menu li .dropdown li {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--color-red);
+  }
 
 /* Footer */
 
 #footer {
   height: var(--footer);
-  background: #232323;
+  background:var(--color-light-black)
+}
+
+@media screen and (min-width: 1400px) {
+  .nav-logo {
+    font-size: 1.75rem;
+    padding-left: 2rem;
+  }
+
+  .nav-title {
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .nav-logo {
+    font-size: 1.75rem;
+    padding-left: 2rem;
+  }
+
+  .nav-title {
+    padding-right: 70rem;
+  }
 }
