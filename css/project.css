@@ -3,10 +3,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  background-color: black;
+  z-index: -100;
+  /* background-color: black; */
+  /* background-color: pink; */
   width: 100%;
   height: var(--main);
-  background-position: 100% 85%;
+  background-position: 190% -20%;
 }
 
 .mobile-background {
@@ -20,7 +22,7 @@
     background-size: 240%;
     background-repeat: no-repeat;
     position: relative;
-    background-color: white;
+    /* background-color: pink; */
     width: 100%;
     height: var(--main);
     background-position: center;

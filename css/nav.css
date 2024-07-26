@@ -1,6 +1,7 @@
 :root {
   --header: 66px;
-  --footer: 90px;
+  --small-header: 44px;
+  --footer: 50px;
   --main: calc(100vh - calc(var(--header) + var(--footer)));
 
   --color-light-white: #f9f5f5;
@@ -114,10 +115,53 @@
 
 #footer {
   height: var(--footer);
-  background:var(--color-light-black)
+  background:var(--color-light-black);
+  border: 1px solid var(--color-red);
+
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 678px) {
+    .nav-logo {
+        position: absolute;
+        left: 0.5rem;
+        font-size: 1rem;
+        top: 0.4rem;
+      }
+
+      .nav-title {
+        padding-right: 5rem;
+        position: absolute;
+        left: 0.5rem;
+        top: 1.8rem;
+      }
+
+    header {
+        height: var(--small-header);
+        padding: 10px 20px;
+        color: green;
+    }
+    header  nav{
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: var(--color-red);
+    }
+
+    header  nav ul li {
+        width: 100%;
+
+    }
+
+    header  nav ul li ul {
+        position: relative;
+
+    }
+
+
+}
+
+/* @media screen and (min-width: 1400px) {
   .nav-logo {
     font-size: 1.75rem;
     padding-left: 2rem;
@@ -137,4 +181,4 @@
   .nav-title {
     padding-right: 70rem;
   }
-}
+} */
