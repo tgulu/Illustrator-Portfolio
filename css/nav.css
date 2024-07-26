@@ -175,106 +175,61 @@
     padding: 10px 20px;
   }
 
+  #header nav ul li ul {
+    position: relative;
+    width: 100%;
+
+  }
+
   /* box parent for links for pages */
   #header .nav-menu li {
     width: 100%;
-    margin: 60px 0;
-    line-height: 20px;
+    position: relative;
+    margin: 5px 0;
+    line-height: 15px;
     display: flex;
     justify-content: center;
+    border: none;
 
   }
   
   /* link for pages */
   #header .nav-menu li a{
-    color: green;
-    font-size: 1.2rem;
-  }
+    color: var(--color-white);
+    font-size: 1.1rem;
 
-  /* .nav-item a{
-    color: green;
-    font-size: 1.2rem;
-    font-weight: 200;
-    padding: 30px 30px;
-    margin-right: 20px ;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-  } */
+  }
 
   /*.nav-menu{ */
   #header nav {
     position: absolute;
     z-index: 100;
     width: 100%;
+    height: var(--main);
     top: 66px;
     left: -100%;
-    /* left: 0; */
     background: var(--color-black);
     transition: all 0.3s ease-in-out;
   }
 
-  /* .nav-menu.active { */
+  #header .nav-menu ul li a{
+    position: relative;
+    width: 100%;
+    background-color:var(--color-light-black);
+  }
+
   #header nav.active {
     left: 0;
   }
 
-
   #header .nav-menu b{
   font-size: 0.9rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
-  /* old code */
-  /* .nav-menu .nav-link{ */
-  #header nav ul li {
-    width: 100%;
-  }
-
-  #header nav ul li ul {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-
-  #header nav ul li:hover ul li {
-    border: 0.1px solid var(--color-black);
-    background: var(--color-grey);
-  }
-
-  /* .menu-toggle {
-    position: relative;
-    width: 40px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-toggle::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-
-    background: var(--color-light-black);
-    transform: translateY(-12px);
-    box-shadow: 0 12px var(--color-light-black);
-  }
-
-  .menu-toggle::after{
-    content: '';
-    position: absolute;
-    right: 30;
-    width: 100%;
-    height: 3px;
-    background: var(--color-light-black);
-    transform: translateY(12px);
-  } */
 }
 
-/* @media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .nav-logo {
     font-size: 1.75rem;
     padding-left: 2rem;
@@ -294,4 +249,4 @@
   .nav-title {
     padding-right: 70rem;
   }
-} */
+}
