@@ -18,11 +18,11 @@
 @media screen and (max-width: 900px) {
   .mobile-background {
     display: flex;
-    background-image: url("/images/title/contact.webp");
+    /* background-image: url("/images/title/contact.webp"); */
     background-size: 240%;
     background-repeat: no-repeat;
     position: relative;
-    /* background-color: pink; */
+    background-color: pink;
     width: 100%;
     height: var(--main);
     background-position: center;
