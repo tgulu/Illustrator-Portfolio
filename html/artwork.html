@@ -9,65 +9,39 @@
 
     <style>
         @import url('/css/artwork.css');
-        @import url('/css/navbar.css');
+        @import url('/css/nav.css');
     </style>
 </head>
 
 <body>
     <section>
-        <header>
- 
-            <!-- Mobile Version -->
-            <div class="mobile-titles">
-                <span class="nav-logo">Ieuan GarrishM</span>
-                <!-- <br />
-                <span class="nav-title">ILLUSTRATOR DESIGNER</span> -->
-            </div>
-
-            <div class="web-titles">
-                <h1 class="nav-logo">Ieuan GarrishW <span class="nav-title"> ILLUSTRATOR DESIGNER</span></h1>
-            </div>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link" id="#about">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Artwork &nbsp; <b> ✧</b></a>
-                    <ul class="nav-dropdown">
-                        <li class="nav-item">
-                            <a href="/html/publishing.html" class="nav-categories" 
-                            id="publishing">Publishing Covers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#sports" class="nav-categories" id="sports">Lost Grounds</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#merchandise" class="nav-categories" id="merchandise">Packaging Designs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#graphic" class="nav-categories" id="graphic">Graphics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/html/project.html" class="nav-categories" id="going">On Going Projects</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/shop.html" class="nav-link" id="shop">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/contact.html" class="nav-link" id="contact">Contact</a>
-                </li>
-            </ul>
-
+        <header id="header">
+            <a href="#" class="nav-logo">Ieuan Garrish</a>
+            <span class="nav-title">ILLUSTRATOR DESIGNER</span>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="#">Artwork &nbsp; <b>✧</b></a>
+                        <ul class="dropdown">
+                            <li> <a href="/html/artwork.html">Artwork Summary</a>
+                            <li><a href="/html/publishing.html">Publishing Covers</a></li>
+                            <li><a href="/html/sport.html">Lost Grounds</a></li>
+                            <li><a href="/html/merchandise.html">Packaging Designs</a></li>
+                            <li> <a href="/html/graphic.html">Graphics</a></li>
+                            <li><a href="/html/project.html" >On Going Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/shop.html"class="nav-link">Shop</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+    
+            </nav>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-
-
         </header>
     </section>
 
@@ -145,20 +119,18 @@
         <!-- thumbnail -->
         <div class="thumbnail">
             <div class="item active">
-                <a href="/html/publishing.html" id="publishing">
                     <img src="/images/artwork/spaceshipMini.webp" alt="air craft design">
                     <div class="content">
-                        Publishing Covers
+                        <a href="/html/publishing.html" id="publishing">Publishing Covers</a>
                     </div>
-                </a>
             </div>
             <div class="item">
-                <a href="/html/sport.html" id="sports">
+               
                     <img src="/images/artwork/hullcity.webp" alt="hull city stadium design">
                     <div class="content">
-                        Lost Grounds
+                        <a href="/html/sport.html" id="sports">Lost Grounds</a>
                     </div>
-                </a>
+             
             </div>
             <div class="item">
                 <a href="/html/merchandise.html" id="merchandise">
