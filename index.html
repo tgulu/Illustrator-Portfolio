@@ -18,75 +18,56 @@
 
     <style>
         @import url('/style.css');
-        @import url('/css/navbar.css');
+        @import url('/css/nav.css');
     </style>
 </head>
 
 <body>
     <section class="hero">
-        <header>
-      <!--Mobile Version-->
-            <!-- <div class="mobile-titles">
-                <span class="nav-logo">Ieuan Garrish</span>
-                <br />
-                <span class="nav-title">ILLUSTRATOR DESIGNER</span>
-            </div> -->
+        <!-- Header section containing the navigation menu -->
+        <header id="header">
+            <a href="#" class="nav-logo">Ieuan Garrish</a>
+            <span class="nav-title">ILLUSTRATOR DESIGNER</span>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="#">Artwork &nbsp; <b>✧</b></a>
+                        <ul class="dropdown">
+                            <li> <a href="/html/artwork.html">Artwork Summary</a>
+                            <li><a href="/html/publishing.html">Publishing Covers</a></li>
+                            <li><a href="/html/sport.html">Lost Grounds</a></li>
+                            <li><a href="/html/merchandise.html">Packaging Designs</a></li>
+                            <li> <a href="/html/graphic.html">Graphics</a></li>
+                            <li><a href="/html/project.html">On Going Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
 
-            <div class="web-titles">
-                <h1 class="nav-logo">Ieuan Garrish<span class="nav-title">ILLUSTRATOR DESIGNER</span></h1>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link" id="#about">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/artwork.html" class="nav-link" id="artwork">Artwork &nbsp; <b> ✧</b></a>
-                    <ul class="nav-dropdown">
-                        <li class="nav-items">
-                            <a href="/html/publishing.html" class="nav-categories" id="publishing">Publishing Covers</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="/html/sport.html" class="nav-categories" id="sports">Lost Grounds</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="/html/merchandise.html" class="nav-categories" id="merchandise">Packaging Designs</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="/html/graphic.html" class="nav-categories" id="graphic">Graphics</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="/html/project.html" class="nav-categories" id="going">On Going Projects</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/contact.html" class="nav-link" id="contact">Contact</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a href="/html/shop.html" class="nav-link" id="shop">Shop</a>
-                </li> -->
-            </ul>
-
+            </nav>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+        </header>
 
 
         </header>
 
 
-            <div class="about">
-                <div class="background-img">
+        <div class="about">
+            <div class="background-img">
+            </div>
+
+            <div class="hero-text">
+                <div class="text-box1">
+                    <h1 class>WHO AM I?</h1>
                 </div>
 
-                <div class="hero-text">
-                    <div class="text-box1"> 
-                    <h1 class>WHO AM I?</h1>
-                    </div>
-              
-                <div class="text-box2"> 
+                <div class="text-box2">
                     <p> That's a really weird question to ask myself, but I'll try to tell you a thing or two. I
                         recently
                         graduated from the University of Brighton, and my subject specialization was illustration. I am
@@ -104,11 +85,18 @@
                         works that help illustrate some of the more cheeful designs from the last year, as well as
                         featuring
                         artworks from my old university projects and personal ongoing ones.</p>
-                    </div>
                 </div>
+
+                <!-- <div class="text-box2">
+                    <p>“Illustrator and designer based in sunny Brighton, well sometimes sunny… 
+
+                        Working on projects from packaging to illustrated books, this site is a glimpse into my work and my silly drawings. Enjoy!“</p>
+                </div> -->
             </div>
+        </div>
 
     </section>
+    <!-- <footer id="footer"> -->
 
     <script src="app.js"></script>
 
