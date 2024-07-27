@@ -1,7 +1,7 @@
 /* Styles for the slider component */
 .slider {
-  height: 100vh;
-  margin-top: -65px;
+  height: 90vh;
+  margin-top: 15px;
   position: relative;
 }
 
@@ -99,7 +99,7 @@ p:nth-child(1) {
   position: absolute;
   top: 90%;
   right: 50px;
-  z-index: 100;
+  z-index: 80;
 }
 
 .arrows button {
@@ -259,13 +259,21 @@ p:nth-child(1) {
   }
 
   .arrows {
-    top: 54%;
+    top: 49%;
     right: 19.6%;
   }
 }
 
 /* Styles for extra-large screens (min-width: 1920px) */
 @media screen and (min-width: 1920px) {
+
+  .slider {
+    height: 90vh;
+    margin-top: 77px;
+    position: relative;
+  }
+
+
   .slider .list .item .content p:nth-child(1) {
     font-size: 60px;
     color: #fff;
@@ -293,7 +301,7 @@ p:nth-child(1) {
   }
 
   .arrows {
-    top:72.8%;
+    top: 69.8%;
     right: 35%;
   }
 

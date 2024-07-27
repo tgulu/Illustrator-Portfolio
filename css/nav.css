@@ -132,7 +132,8 @@
 /* Footer */
 #footer {
   height: var(--footer);
-  background: var(--color-light-white);
+  /* background: var(--color-light-white); */
+  background: green;
   /* border: 1px solid var(--color-red); */
 }
 
