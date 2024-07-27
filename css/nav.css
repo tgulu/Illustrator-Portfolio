@@ -132,8 +132,7 @@
 /* Footer */
 #footer {
   height: var(--footer);
-  /* background: var(--color-light-white); */
-  background: green;
+  background: var(--color-light-white);
   /* border: 1px solid var(--color-red); */
 }
 
