@@ -1,7 +1,8 @@
 // *** Hamburger Menu ***
+
 // Selecting the hamburger menu icon and navigation menu
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const navMenu = document.querySelector("nav");
 
 // Event listener to toggle the active class on hamburger menu and navigation menu
 hamburger.addEventListener("click", () => {
