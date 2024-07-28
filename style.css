@@ -112,6 +112,8 @@ p {
 
 @media screen and (max-width: 678px) {
   .background-img {
+    /* change to mobile version */
+    /* background-image: url("/images/title/titleBubbleSpeech.webp"); */
     background-size: 90%;
     background-position: 95% 90%;
     height: calc(95vh - 20px);
@@ -120,14 +122,22 @@ p {
   }
 }
 
+
+
 @media screen and (min-width: 1440px) {
+
+  .about .hero-text {
+    left: 0%;
+    top: 35%;
+  }
+
   .about .hero-text p {
-    font-size: 20px;
-    width: 80%;
+    font-size: 18px;
+    width: 60%;
   }
 
   .about .hero-text h1 {
-    font-size: 110px;
+    font-size: 70px;
   }
   .background-img {
     height: 90vh;
@@ -153,11 +163,8 @@ p {
   } */
 
   .about .hero-text {
-    position: absolute;
     left: 5%;
     top: 40%;
-    /* width: 1000px; */
-    z-index: 1;
   }
 
   .about .hero-text p {
@@ -171,29 +178,29 @@ p {
 
 }
 
-@media screen and (min-width: 2010px) {
+@media screen and (min-width: 2000px) {
+
+  .background-img {
+    background-size: 98%;
+  }
+
+
   .text-box2 {
     padding: 10px;
   }
 
   .about .hero-text {
-    position: absolute;
-    left: 5%;
-    top: 10%;
-    width: 1000px;
-    z-index: 1;
+    left: 12%;
+    top: 40%;
   }
 
   .about .hero-text p {
-    font-size: 32px;
+    font-size: 30px;
     width: 100%;
   }
 
   .about .hero-text h1 {
-    font-size: 105px;
+    font-size: 100px;
   }
 }
 
-@media screen and (min-width: 2560px) {
-
-}
