@@ -238,9 +238,21 @@
   }
 }
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1920px) {
   .nav-logo {
     font-size: 1.75rem;
+    padding-left: 1.4rem;
+  }
+
+  .nav-title {
+    padding-right: 30rem;
+  }
+}
+
+
+@media screen and (min-width: 2240px) {
+  .nav-logo {
+    font-size: 2.75rem;
     padding-left: 2rem;
   }
 
