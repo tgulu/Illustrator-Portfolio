@@ -137,7 +137,7 @@ p {
 @media screen and (min-width: 1920px) {
 
   .background-img {
-    background-image: url("/titleBubbleSpeech.jpg");
+    background-image: url("/images/title/titleBubbleSpeech.webp");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 93vh;
