@@ -250,7 +250,7 @@
 }
 
 
-@media screen and (min-width: 2240px) {
+@media screen and (min-width: 2000px) {
   .nav-logo {
     font-size: 2.75rem;
     padding-left: 2rem;
