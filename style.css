@@ -204,3 +204,28 @@ p {
   }
 }
 
+
+@media screen and (min-width: 2360) {
+  .background-img {
+    background-size: 98%;
+  }
+
+
+  .text-box2 {
+    padding: 10px;
+  }
+
+  .about .hero-text {
+    left: 12%;
+    top: 40%;
+  }
+
+  .about .hero-text p {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .about .hero-text h1 {
+    font-size: 100px;
+  }
+}
