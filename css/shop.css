@@ -3,9 +3,9 @@
     src: url("/fonts/Luminari-Regular.ttf");
   }
 
-  *{
+  /* *{
     font-family: luminari;
-  }
+  } */
 
   :root{
     --color-light-white:  #eee;
@@ -24,10 +24,10 @@
     text-transform: uppercase;
   }
   
-  /* header .title,
-  .title-cart, #total-price {
+  header .title, .list-cart, .quantity,
+  .title-cart, #total-price, .price, .add-cart, .item h2{
     font-family: luminari;
-  } */
+  }
   
   /* SVG styling */
   svg {
