@@ -17,109 +17,89 @@
 
     <style>
         @import url('/css/shop.css');
-        @import url('/css/purchase.css');
-        @import url('/css/navbar.css');
+        @import url('/css/nav.css');
     </style>
 </head>
 
 <body class="">
 
-        <header>
-            <div class="content-wrap">
-                <span class="nav-logo">Ieuan Garrish</span>
-                <!-- <br />
-                <span class="nav-title">ILLUSTRATOR DESIGNER</span> -->
-            </div>
-
-
-
+  
+    <!-- Header section containing the navigation menu -->
+    <header id="header">
+        <a href="#" class="nav-logo">Ieuan Garrish</a>
+        <span class="nav-title">ILLUSTRATOR DESIGNER</span>
+        <div class="menu-toggle"></div>
+        <nav>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/artwork.html" class="nav-link" id="artwork">Artwork &nbsp; <b> ✧</b></a>
-                    <ul class="nav-dropdown">
-                        <li class="nav-items">
-                            <a href="/html/publishing.html" class="nav-categories" id="publishing">Publishing Covers</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#sports" class="nav-categories" id="sports">Lost Grounds</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#merchandise" class="nav-categories" id="merchandise">Packaging Designs</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="#graphic" class="nav-categories" id="graphic">Graphics</a>
-                        </li>
-                        <li class="nav-items">
-                            <a href="/html/project.html" class="nav-categories" id="going">On Going Projects</a>
-                        </li>
-
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="#">Artwork &nbsp;<b>✧</b></a>
+                    <ul class="dropdown">
+                        <li><a href="/html/artwork.html">Artwork Summary</a>
+                        <li><a href="/html/publishing.html">Publishing Covers</a></li>
+                        <li><a href="/html/sport.html">Lost Grounds</a></li>
+                        <li><a href="/html/merchandise.html">Packaging Designs</a></li>
+                        <li><a href="/html/graphic.html">Graphics</a></li>
+                        <li><a href="/html/project.html">On Going Projects</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#shop" class="nav-link" id="shop">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/html/contact.html" class="nav-link" id="contact">Contact</a>
-                </li>
-               
-
+                <li><a href="#" class="nav-link">Shop</a></li>
+                <li><a href="/html/contact.html" class="nav-link">Contact</a></li>
             </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-
-        </header>
-        <!-- <div class="title-background"></div> -->
-
-<section class=""> 
-    <div class="container">
-        <header>
-            <div class="title">Shops</div>
-            <div class="icon-cart">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fill-rule="evenodd" d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z" clip-rule="evenodd"/>
-                  </svg>
-                  <span>0</span>
-            </div>
-        </header>
-
-
-    <div class="list-product">
-        <div class="item">
-            <img src="/images/shop/oxford.webp" alt="manor ground oxford united poster">
-            <h2>Name Product</h2>
-            <div class="price">£20</div>
-            <button class="add-cart"> Add to Cart</button>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </div>
-</div>
+    </header>
 
-<div class="cart-tab">
-    <h1 class="title-cart">Total: £<span id="total-price">0.00</span></h1>
-    <div class="list-cart"></div>
-    <!-- <div class="cart-total">
-        Total: £<span id="total-price">0.00</span>
-    </div> -->
-    <div class="btn">
-        <button class="close">CLOSE</button>
-        <button class="check-out">CHECK OUT</button>
-    </div>
-</div>
+    <section class="">
+        <div class="container">
+            <header>
+                <div class="title">Shops</div>
+                <div class="icon-cart">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>0</span>
+                </div>
+            </header>
 
 
+            <div class="list-product">
+                <div class="item">
+                    <img src="/images/shop/oxford.webp" alt="manor ground oxford united poster">
+                    <h2>Name Product</h2>
+                    <div class="price">£20</div>
+                    <button class="add-cart"> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-tab">
+            <h1 class="title-cart">Total: £<span id="total-price">0.00</span></h1>
+            <div class="list-cart"></div>
+            <!-- <div class="cart-total">
+            Total: £<span id="total-price">0.00</span>
+            </div> -->
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="check-out">CHECK OUT</button>
+            </div>
+        </div>
 
 
+    </section>
 
-<script src="/app.js"></script>
 
-   
+    <script src="/shop.js"></script>
+    <script src="app.js"></script>
+
+
 
 </body>
 
