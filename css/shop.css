@@ -1,283 +1,153 @@
 @font-face {
-  font-family: luminari;
-  src: url("/fonts/Luminari-Regular.ttf");
-}
-
-/* Container styling */
-.container {
-  margin: auto;
-  text-align: center;
-  padding-top: 10px;
-  transition: transform 0.5s;
-}
-
-header .title,
-.title-cart, #total-price {
-  font-family: luminari;
-}
-
-/* SVG styling */
-svg {
-  width: 30px;
-}
-
-/* Header styling */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 100px;
-}
-
-/* Header icon cart positioning */
-header .icon-cart {
-  position: relative;
-  /* z-index: -100 ; */
-}
-
-/* Header icon cart span styling */
-header .icon-cart span {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  background-color: rgb(212, 20, 20);
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  right: -20px;
-}
-
-/* List product item image styling */
-.list-product .item img {
-  /* width: 90%; */
-  filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 0.6));
-}
-
-/* List product grid styling */
-.list-product {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-/* List product item styling */
-.list-product .item {
-  /* background-color: #ababa2c4; */
-  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFic3RyYWN0JTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
-  padding: 10px 10px;
-  border-radius: 20px;
-  color: #ffffff;
-}
-
-/* List product item heading styling */
-.list-product .item h2 {
-  font-weight: 500;
-  font-size: medium;
-}
-
-/* List product item price styling */
-.list-product .item .price {
-  font-size: small;
-}
-
-/* List product item button styling */
-.list-product .item button {
-  background-color: #353432;
-  color: #eee;
-  padding: 5px 10px;
-  border-radius: 20px;
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Show cart section tab styling */
-section.show-cart .cart-tab {
-  inset: 50px 0 0 auto;
-  z-index: 1000; /* Ensure it is above other content */
-}
-
-/* Cart tab styling */
-.cart-tab {
-  width: 470px;
-  background-color: #353233;
-  color: #eee;
-  position: fixed;
-  inset: 50px -470px 0 auto;
-  /* inset: 50px 0px 0 auto; */
-  display: grid;
-  grid-template-rows: 70px 1fr 70px;
-  transition: 0.5s;
-  z-index: 1000; /* Ensure it is above other content */
-
-}
-
-/* Cart tab heading styling */
-.cart-tab h1 {
-  font-family: luminari;
-  padding: 20px;
-  margin: 0;
-  font-weight: 300;
+    font-family: luminari;
+    src: url("/fonts/Luminari-Regular.ttf");
+  }
   
-}
-
-/* Cart tab button grid styling */
-.cart-tab .btn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-/* Cart tab button styling */
-.cart-tab .btn button {
-  background-color: #e8bc0e;
-  border: none;
-  font-weight: 500;
-  font-family: luminari;
-  cursor: pointer;
-}
-
-/* Cart tab close button styling */
-.cart-tab .btn .close {
-  background-color: #eee;
-}
-
-/* Cart tab list item image styling */
-.cart-tab .list-cart .item img {
-  width: 100%;
-}
-
-/* Cart tab list item grid styling */
-.cart-tab .list-cart .item {
-  display: grid;
-  grid-template-columns: 160px 90px 30px 1fr;
-  gap: 10px;
-  text-align: center;
-  align-items: center;
-}
-
-/* List cart quantity span styling */
-.list-cart .quantity span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #eee;
-  color: #555;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* List cart quantity span child styling */
-.list-cart .quantity span:nth-child(2) {
-  background-color: transparent;
-  color: #eee;
-}
-
-/* List cart even item background color */
-.list-cart .item:nth-child(even) {
-  background-color: #eee1;
-}
-
-/* List cart overflow handling */
-.list-cart {
-  overflow: auto;
-}
-
-/* List cart scrollbar styling */
-.list-cart::-webkit-scrollbar {
-  width: 0;
-}
-
-/* Media queries */
-
-/* Phone screens */
-@media (max-width: 768px) {
+  /* Container styling */
   .container {
-    width: 800px;
-    max-width: 90vw;
-    height: 80vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform 0.5s;
   }
-
-  header .title {
-    font-size: 0.9rem;
+  
+  header .title,
+  .title-cart, #total-price {
+    font-family: luminari;
   }
-
+  
+  /* SVG styling */
+  svg {
+    width: 30px;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+  }
+  
+  /* Header icon cart positioning */
+  header .icon-cart {
+    position: relative;
+    /* z-index: -100 ; */
+  }
+  
   /* Header icon cart span styling */
   header .icon-cart span {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(212, 20, 20);
     justify-content: center;
     align-items: center;
-    color: #000000;
-    background-color: transparent;
+    color: #fff;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     right: -20px;
   }
-
-  /* Show cart section tab styling */
-  section.show-cart .cart-tab {
-    inset: 0 0 0 auto;
+  
+  /* List product item image styling */
+  .list-product .item img {
+    /* width: 90%; */
+    filter: drop-shadow(0 3px 5px rgba(255, 255, 255, 0.6));
   }
-
+  
+  /* List product grid styling */
   .list-product {
-    grid-template-columns: repeat(2, 1fr);
+    display:block;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 150px;
   }
-
+  
+  /* List product item styling */
   .list-product .item {
+    /* background-color: #ababa2c4; */
+    background-image: url("https://images.unsplash.com/photo-1509486432407-f8fb9cc99acd?q=80&w=2799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     padding: 10px 10px;
     border-radius: 20px;
-    color: #000000;
-    margin-top: 40px;
+    color: #ffffff;
   }
-
-  .list-product .item img {
-    width: 70%;
+  
+  /* List product item heading styling */
+  .list-product .item h2 {
+    font-weight: 500;
+    font-size: medium;
   }
-
+  
+  /* List product item price styling */
+  .list-product .item .price {
+    font-size: small;
+  }
+  
+  /* List product item button styling */
+  .list-product .item button {
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Show cart section tab styling */
+  section.show-cart .cart-tab {
+    inset: 50px 0 0 auto;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
   /* Cart tab styling */
   .cart-tab {
-    width: 390px;
+    width: 470px;
     background-color: #353233;
     color: #eee;
-    grid-template-rows: 50px 1fr 60px;
-    padding-left: 10px;
+    position: fixed;
+    inset: 50px -470px 0 auto;
+    /* inset: 50px 0px 0 auto; */
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
     transition: 0.5s;
     z-index: 1000; /* Ensure it is above other content */
   }
-
+  
   /* Cart tab heading styling */
   .cart-tab h1 {
-    /* padding: 25px; */
-    margin-bottom: 100px;
+    font-family: luminari;
+    padding: 20px;
+    margin: 0;
     font-weight: 300;
+    
   }
-
+  
   /* Cart tab button grid styling */
   .cart-tab .btn {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   /* Cart tab button styling */
   .cart-tab .btn button {
     background-color: #e8bc0e;
     border: none;
     font-weight: 500;
+    font-family: luminari;
     cursor: pointer;
   }
-
+  
   /* Cart tab close button styling */
   .cart-tab .btn .close {
     background-color: #eee;
   }
-
+  
   /* Cart tab list item image styling */
   .cart-tab .list-cart .item img {
-    width: 75%;
+    width: 100%;
   }
-
+  
   /* Cart tab list item grid styling */
   .cart-tab .list-cart .item {
     display: grid;
@@ -286,73 +156,203 @@ section.show-cart .cart-tab {
     text-align: center;
     align-items: center;
   }
-}
-
-/* Large desktop screens */
-
-@media screen and (min-width: 1200px) {
-  /* Container styling */
-  .container {
-    width: 1200px;
-    max-width: 90vw;
+  
+  /* List cart quantity span styling */
+  .list-cart .quantity span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
   }
-
-  header .title {
-    font-size: 1.2rem;
+  
+  /* List cart quantity span child styling */
+  .list-cart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
   }
-
-  .list-product .item {
-    padding: 10px 10px;
-    border-radius: 20px;
-    color: #000000;
+  
+  /* List cart even item background color */
+  .list-cart .item:nth-child(even) {
+    background-color: #eee1;
   }
-
-  .list-product .item img {
-    width: 55%;
+  
+  /* List cart overflow handling */
+  .list-cart {
+    overflow: auto;
   }
-
-  .list-product {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  
+  /* List cart scrollbar styling */
+  .list-cart::-webkit-scrollbar {
+    width: 0;
   }
-}
-
-/* Extra large desktop screens */
-
-@media screen and (min-width: 1400px) {
-  .list-product .item {
-    padding: 10px 10px;
-    border-radius: 20px;
-    color: #ffffff;
+  
+  /* Media queries */
+  
+  /* Phone screens */
+  @media (max-width: 768px) {
+    .container {
+      width: 800px;
+      max-width: 90vw;
+      height: 80vh;
+    }
+  
+    header .title {
+      font-size: 0.9rem;
+    }
+  
+    /* Header icon cart span styling */
+    header .icon-cart span {
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+      background-color: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: -20px;
+    }
+  
+    /* Show cart section tab styling */
+    section.show-cart .cart-tab {
+      inset: 0 0 0 auto;
+    }
+  
+    .list-product {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .list-product .item {
+      padding: 10px 10px;
+      border-radius: 20px;
+      color: #000000;
+      margin-top: 40px;
+    }
+  
+    .list-product .item img {
+      width: 70%;
+    }
+  
+    /* Cart tab styling */
+    .cart-tab {
+      width: 390px;
+      background-color: #353233;
+      color: #eee;
+      grid-template-rows: 50px 1fr 60px;
+      padding-left: 10px;
+      transition: 0.5s;
+      z-index: 1000; /* Ensure it is above other content */
+    }
+  
+    /* Cart tab heading styling */
+    .cart-tab h1 {
+      /* padding: 25px; */
+      margin-bottom: 100px;
+      font-weight: 300;
+    }
+  
+    /* Cart tab button grid styling */
+    .cart-tab .btn {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    /* Cart tab button styling */
+    .cart-tab .btn button {
+      background-color: #e8bc0e;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  
+    /* Cart tab close button styling */
+    .cart-tab .btn .close {
+      background-color: #eee;
+    }
+  
+    /* Cart tab list item image styling */
+    .cart-tab .list-cart .item img {
+      width: 75%;
+    }
+  
+    /* Cart tab list item grid styling */
+    .cart-tab .list-cart .item {
+      display: grid;
+      grid-template-columns: 160px 90px 30px 1fr;
+      gap: 10px;
+      text-align: center;
+      align-items: center;
+    }
   }
-}
-
-/* Ultra-wide screens */
-
-@media (min-width: 1920px) {
-  header .title {
-    font-size: 1.9rem;
+  
+  /* Large desktop screens */
+  
+  @media screen and (min-width: 1200px) {
+    /* Container styling */
+    .container {
+      width: 1200px;
+      max-width: 90vw;
+    }
+  
+    header .title {
+      font-size: 1.2rem;
+    }
+  
+    .list-product .item {
+      padding: 10px 10px;
+      border-radius: 20px;
+      color: #000000;
+    }
+  
+    .list-product .item img {
+      width: 55%;
+    }
+  
+    .list-product {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
-
-  /* Container styling */
-  .container {
-    width: 80%;
+  
+  /* Extra large desktop screens */
+  
+  @media screen and (min-width: 1400px) {
+    .list-product .item {
+      padding: 10px 10px;
+      border-radius: 20px;
+      color: #ffffff;
+    }
   }
-
-  .list-product {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  
+  /* Ultra-wide screens */
+  
+  @media (min-width: 1920px) {
+    header .title {
+      font-size: 1.9rem;
+    }
+  
+    /* Container styling */
+    .container {
+      width: 80%;
+    }
+  
+    .list-product {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  
+    .list-product .item {
+      padding: 25px 10px;
+      border-radius: 20px;
+      color: #ffffff;
+    }
+  
+    .list-product .item img {
+      width: 70%;
+    }
   }
-
-  .list-product .item {
-    padding: 25px 10px;
-    border-radius: 20px;
-    color: #ffffff;
-  }
-
-  .list-product .item img {
-    width: 70%;
-  }
-}
+  
