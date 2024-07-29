@@ -6,6 +6,15 @@
   *{
     font-family: luminari;
   }
+
+  :root{
+    --color-light-white:  #eee;
+    --color-white: #ffffff;
+    --color-red: #f9f5f5;
+    --color-black: #ffffff;
+    --color-light-black: #353233;
+
+  }
   
   /* Container styling */
   .container {
@@ -15,10 +24,10 @@
     text-transform: uppercase;
   }
   
-  header .title,
+  /* header .title,
   .title-cart, #total-price {
     font-family: luminari;
-  }
+  } */
   
   /* SVG styling */
   svg {
@@ -48,7 +57,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 45%;
     position: absolute;
     top: 50%;
     right: -20px;
@@ -72,7 +81,7 @@
     /* background-color: #ababa2c4; */
     background-image: url("https://images.unsplash.com/photo-1509486432407-f8fb9cc99acd?q=80&w=2799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     /* padding: 10px 10px; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     color: #ffffff;
   }
   
@@ -92,7 +101,7 @@
     background-color: #353432;
     color: #eee;
     padding: 5px 10px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 10px;
     border: none;
     cursor: pointer;
@@ -107,8 +116,8 @@
   /* Cart tab styling */
   .cart-tab {
     width: 470px;
-    background-color: #353233;
-    color: #eee;
+    background-color: var(--color-light-black);
+    color: var(   --color-light-white);
     position: fixed;
     inset: 50px -470px 0 auto;
     /* inset: 50px 0px 0 auto; */
@@ -168,7 +177,7 @@
     height: 20px;
     background-color: #eee;
     color: #555;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     cursor: pointer;
   }
   
@@ -230,7 +239,7 @@
   
     .list-product .item {
       /* padding: 25px 3px; */
-      border-radius: 20px;
+      /* border-radius: 20px; */
       color: #000000;
       margin-top: 40px;
     }
@@ -306,7 +315,7 @@
   
     .list-product .item {
       padding: 10px 3px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       color: #000000;
     }
   
@@ -326,7 +335,7 @@
   @media screen and (min-width: 1400px) {
     .list-product .item {
       padding: 25px -30px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       color: #ffffff;
     }
   }
@@ -351,7 +360,7 @@
   
     .list-product .item {
       padding: 25px 30px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       color: #ffffff;
     }
   
