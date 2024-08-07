@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
    
-    <script
-        src="https:www.paypal.com/sdk/ks?client-id=<%=paypalClientId %>"></script>
-        <script src="/public/payment.js" defer></script>
+
 </head>
 
 <body>
 
-    <input type="number" id="amount">
-    <div id="paypal"></div>
+    <h1>Brighton Seagulls</h1>
+    <h2> Price: £10</h2>
+    <form action="/pay" method="post">
+        <input type="submit" value="Buy" >
+    </form>
 </body>
 
 </html>
