@@ -1,6 +1,8 @@
 require('dotenv').config()
 const express = require('express')
 
+const paypal = require('./services/paypal')
+
 const app = express()
 
 app.set('view engine', 'ejs')
