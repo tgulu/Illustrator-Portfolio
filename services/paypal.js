@@ -9,16 +9,16 @@ async function generateAccessToken() {
             method: 'post',
             data: 'grant_type=client_credentials',
             auth: {
-                username: process.env.PAYPAL_CLIENT_ID, // Corrected the typo here
-                password: process.env.PAYPAL_SECRET
+                username: process.env.PAYPAL_CLIENT_ID, 
+                password: process.env.PAYPAL_SECRET 
             },
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
+                'Content-Type': 'application/x-www-form-urlencoded' // Required content type for PayPal's token endpoint
             }
         });
 
         // Return the access token from the response data
-        return response.data.access_token; // Corrected the typo here
+        return response.data.access_token;
     } catch (error) {
         console.error('Error generating access token:', error.response ? error.response.data : error.message);
         throw new Error('Could not generate access token');
@@ -27,56 +27,56 @@ async function generateAccessToken() {
 
 exports.createOrder = async () => {
     try {
-        const accessToken = await generateAccessToken();
+        const accessToken = await generateAccessToken(); // Generate the access token
 
         const response = await axios({
             url: process.env.PAYPAL_BASE_URL + '/v2/checkout/orders',
             method: 'post',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${accessToken}`
+                'Content-Type': 'application/json', // Set content type to JSON for the order creation
+                'Authorization': `Bearer ${accessToken}` 
             },
             data: JSON.stringify({
-                intent: 'CAPTURE',
+                intent: 'CAPTURE', // Order intent set to capture payment immediately
                 purchase_units: [
                     {
                         items: [
                             {
-                                name: "Brighton Seagulls",
-                                description: "football poster",
-                                quantity: 1,
+                                name: "Brighton Seagulls", 
+                                description: "football poster", 
+                                quantity: 1, 
                                 unit_amount: {
-                                    currency_code: 'GBP',
+                                    currency_code: 'GBP', 
                                     value: '10'
                                 }
                             }
                         ],
                         amount: {
                             currency_code: 'GBP',
-                            value: '10',
+                            value: '10', 
                             breakdown: {
                                 item_total: {
-                                    currency_code: 'GBP',
-                                    value: '10'
+                                    currency_code: 'GBP', 
+                                    value: '10' 
                                 }
                             }
                         }
                     }
                 ],
                 application_context: {
-                    return_url: process.env.BASE_URL + '/complete-order',
-                    cancel_url: process.env.BASE_URL + '/cancel-order',
-                    user_action: 'PAY_NOW',
-                    brand_name: "Ieuan Garrish Store"
+                    return_url: process.env.BASE_URL + '/complete-order', // URL to redirect after order approval
+                    cancel_url: process.env.BASE_URL + '/cancel-order' // URL to redirect if the order is canceled
                 }
             })
         });
 
-        console.log(response.data); // Corrected the console log to actually output the response data
+        // Return the approval link from the response data
+        return response.data.links.find(link => link.rel === 'approve').href;
     } catch (error) {
         console.error('Error creating order:', error.response ? error.response.data : error.message);
+        throw new Error('Could not create order');
     }
-};
+}
 
-// Invoke the createOrder function to test
-exports.createOrder();
+// Call createOrder and log the approval link
+exports.createOrder().then(result => console.log(result)).catch(error => console.error(error));
