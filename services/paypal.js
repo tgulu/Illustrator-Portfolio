@@ -65,7 +65,9 @@ exports.createOrder = async () => {
                 ],
                 application_context: {
                     return_url: process.env.BASE_URL + '/complete-order', // URL to redirect after order approval
-                    cancel_url: process.env.BASE_URL + '/cancel-order' // URL to redirect if the order is canceled
+                    cancel_url: process.env.BASE_URL + '/cancel-order', // URL to redirect if the order is canceled
+                    user_action: 'PAY_NOW',
+                    brand_name: "Ieuan Garrish Store"
                 }
             })
         });
@@ -78,5 +80,16 @@ exports.createOrder = async () => {
     }
 }
 
-// Call createOrder and log the approval link
-exports.createOrder().then(result => console.log(result)).catch(error => console.error(error));
+exports.capturePayment = async (orderId) =>{
+    const accessToken = await generateAccessToken()
+
+    const response = await axios({
+        url: process.env.PAYPAL_BASE_URL + `/v2/checkout/orders/${orderId}/capture`,
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json', // Set content type to JSON for the order creation
+            'Authorization': `Bearer ${accessToken}` 
+        },
+    })
+    return response.data
+}

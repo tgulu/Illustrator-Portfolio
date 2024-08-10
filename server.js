@@ -8,8 +8,30 @@ const app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
-app.get('/', (req,res) => {
+app.get('/', (req, res) => {
     res.render('payment')
+})
+
+app.post('/pay', async (req, res) => {
+    try {
+        const url = await paypal.createOrder()
+        res.redirect(url)
+    } catch (error) {
+        res.send('Error: ' + error)
+    }
+})
+
+app.get('/complete-order', async(req, res) => {
+    try {
+        await paypal.capturePayment(req.query.token)
+        res.send('Purchase Successful')
+    } catch (error){
+        res.send('Error: ' + error)
+    }
+})
+
+app.get('/cancel-order', (req, res) => {
+    res.redirect('/')
 })
 
 app.listen(3000, () => console.log('Server started on port 3000'))
