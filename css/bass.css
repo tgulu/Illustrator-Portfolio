@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: rgba(249, 248, 248, 0.2) 0px 0.15rem 1.2rem,
-    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    rgba(30, 87, 201, 0.1) 0px 0.075rem 0.175rem;
   height: 100%;
   width: 100%;
   border-radius: 10px;
@@ -15,7 +15,6 @@
   margin-top: 0.9rem;
   transform: scale(0.98);
   transition: all 0.7s ease;
-  /* background-color: green; */
 }
 
 .image img {
@@ -29,7 +28,6 @@
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-3px) scale(1.1);
-  color: yellow;
 }
 
 @media screen and (min-width: 1280px) {
@@ -38,7 +36,7 @@
   }
 
   .image:hover {
-    transform: translateX(-3px) scale(1.05);
+    transform: translateX(-1.05px) scale(1.05);
   }
 }
 
@@ -48,6 +46,6 @@
   }
 
   .image:hover {
-    transform: translateY(-3px) scale(1);
+    transform: translateY(-1.05px) scale(1);
   }
 }

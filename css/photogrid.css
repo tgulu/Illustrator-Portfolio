@@ -1,3 +1,14 @@
+#title {
+  position: relative;
+  font-size: 45px;
+  font-weight: normal;
+  top: 2px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: luminari;
+}
+
 .photo-grid {
   display: grid;
   gap: 1rem;
@@ -13,19 +24,13 @@
   grid-column: span 2 / auto;
 }
 
-h1 {
-  position: relative;
-  font-size: 45px;
-  font-weight: normal;
-  top: 2px;
-  /* padding: 15px; */
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: luminari;
-}
-
 @media screen and (min-width: 300px) {
+  #title {
+    font-size: 25px;
+    font-weight: normal;
+    top: 20px;
+  }
+
   .photo-grid {
     display: grid;
     gap: 0;
