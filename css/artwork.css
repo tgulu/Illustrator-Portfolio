@@ -103,7 +103,8 @@ p:nth-child(1) {
 }
 
 .arrows button {
-  background-color: white;
+  /* background-color: white; */
+  background-color: var(--color-pastelgreen);
   border: none;
   font-family: monospace;
   width: 65px;
@@ -111,12 +112,15 @@ p:nth-child(1) {
   border-radius: 5px;
   font-size: x-large;
   color: black;
+  /* color:  var(--color-lightpink); */
   transition: 0.5s;
 }
 
 .arrows button:hover {
-  background-color: black;
+  /* background-color: black; */
+  background-color:  var(--color-lightpink);
   color: #eee;
+  /* color: var(--color-salmonpink); */
 }
 
 /* Styles for thumbnail section */
