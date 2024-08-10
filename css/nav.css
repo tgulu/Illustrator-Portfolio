@@ -3,14 +3,20 @@
   --small-header: 44px;
   --footer: 50px;
   --main: calc(100vh - calc(var(--header) + var(--footer)));
-
   --color-light-white: #f9f5f5;
   --color-white: #ffffff;
   --color-light-black: #232323;
   --color-black: #010101;
   --color-grey: #bababaad;
   --color-red: #ff0606ad;
-  --background-gradient: linear-gradient(0.25turn, #4f3fa6, #000000, #f63cf6);
+  --color-offwhite: #fffafa; 
+  --color-salmonpink: #ffe0e0; 
+  --color-lightpink:  #ffc0d0;
+  --color-pastelgreen: #efdfbf; 
+
+  /* --background-gradient: linear-gradient(0.25turn, #4f3fa6, #000000, #f63cf6); */
+  --background-gradient: linear-gradient( 0.75turn, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
+
 }
 
 * {
@@ -74,7 +80,7 @@
 .nav-menu .nav-link::after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 4px;
   display: block;
   bottom: 14px;
   left: 20px;
@@ -112,7 +118,8 @@
 .nav-menu li .dropdown li {
   position: relative;
   width: 100%;
-  border: 1px solid var(--color-red);
+  border: 1px solid var(--color-lightpink);
+  background: var(--navmenu-gradient);
 }
 
 .bar {
@@ -133,7 +140,6 @@
 #footer {
   height: var(--footer);
   background: var(--color-light-white);
-  /* border: 1px solid var(--color-red); */
 }
 
 @media screen and (max-width: 678px) {
