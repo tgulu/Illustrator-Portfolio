@@ -15,7 +15,7 @@
   --color-pastelgreen: #efdfbf; 
 
   /* --background-gradient: linear-gradient(0.25turn, #4f3fa6, #000000, #f63cf6); */
-  --background-gradient: linear-gradient( 0.75turn, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
+  --background-gradient: linear-gradient( 0, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
 
 }
 
