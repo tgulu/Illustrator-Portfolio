@@ -17,8 +17,10 @@
 
 
     <style>
-        @import url('/css/categories.css');
+        @import url('/css/popup.css');
         @import url('/css/nav.css');
+        @import url('/css/photogrid.css');
+        @import url('/css/base.css');
     </style>
 </head>
 
@@ -55,18 +57,22 @@
     </section>
 
 
-    <section>
+    <!-- <section>
         <div class="container">
     
             <div class="image-container">
                 <h1>Graphics</h1>
-                <div class="image"><img src="/images/graphics/blLogos.webp" alt="bl logos"></div>
-                <div class="image"><img src="/images/graphics/blLogo.webp" alt="bl logo"></div>
-                <div class="image"><img src="/images/graphics/ojoLogo.webp" alt="ojo simple logo"></div>
-                <div class="image"><img src="/images/graphics/blProductions.webp" alt="wembly stadium"></div>
-                <div class="image"><img src="/images/graphics/kindessLogo.webp" alt="kindness logo on products"></div>
-                <div class="image"><img src="/images/graphics/icemanSimple.webp" alt="ice man simple logo"></div>
-                <div class="image"><img src="/images/graphics/supremeScents.webp" alt="super scenet logo"></div>
+                <div class="image"> </div>
+                <div class="image"> <img src="/images/graphics/blLogo.webp" alt="bl logo"></div>
+                <div class="image"> <img src="/images/graphics/ojoLogo.webp" alt="ojo simple logo"></div>
+                <div class="image"> <img src="/images/graphics/blProductions.webp" alt="wembly stadium">
+                </div>
+                <div class="image"> <img src="/images/graphics/kindessLogo.webp" alt="kindness logo on products">
+                </div>
+
+                <div class="image"> <img src="/images/graphics/icemanSimple.webp" alt="ice man simple logo"></div>
+
+                <div class="image"> <img src="/images/graphics/supremeScents.webp" alt="super scenet logo"></div>
             </div>
            
             <div class="popup">
@@ -76,9 +82,99 @@
 
         </div>
        
-    </section>
+    </section> -->
 
-    <script src="/app.js"></script>
+    <section>
+        <h1 id="title">On Going Projects</h1>
+    
+        <div class="photo-grid">
+    
+            <div class="image image-wide image-tall">
+                <img src="/images/graphics/blLogos.webp" alt="bl logos">
+                <div class="overlay-text">BL Logos</div>
+            </div>
+    
+            <div class="image image-tall">
+                <img src="/images/graphics/ojoLogo.webp" alt="ojo simple logo">
+                <div class="overlay-text">Ojo simple logo</div>
+            </div>
+    
+            <div class="image">
+                <img src="/images/graphics/blProductions.webp" alt="bl productions">
+                <div class="overlay-text">bl productions</div>
+            </div>
+    
+            <div class="image image-wide">
+                <img src="/images/graphics/kindessLogo.webp" alt="kindness logo on products">
+                <div class="overlay-text">kindness logo</div>
+            </div>
+    
+            <div class="image image-tall image-wide">
+                <img src="/images/graphics/icemanSimple.webp" alt="ice man simple logo">
+                <div class="overlay-text">ice man</div>
+            </div>
+    
+            <div class="image image-wide">
+               <img src="/images/graphics/supremeScents.webp" alt="super scenet logo">
+                <div class="overlay-text">super scenet</div>
+            </div>
+    
+            <div class="image">
+                <img src="/images/projects/cowboys.webp" alt="cowboy hat design">
+                <div class="overlay-text">cowboy hat design</div>
+            </div>
+    
+            <div class="image image-tall">
+                <img src="/images/projects/hatter.webp" alt="mad hatter tea pot">
+                <div class="overlay-text">mad hatter tea pot</div>
+            </div>
+    
+            <div class="image">
+                <img src="/images/projects/wembley.webp" alt="wembly stadium">
+                <div class="overlay-text">wembly stadium</div>
+            </div>
+    
+            <div class="image image-wide">
+                <img src="/images/projects/usa.webp" alt="usa snow globe">
+                <div class="overlay-text">usa snow globe</div>
+            </div>
+    
+            <div class="image image-tall">
+                <img src="/images/projects/doddle.webp" alt="sketches of designs">
+                <div class="overlay-text">sketches of designs</div>
+            </div>
+    
+            <div class="image">
+                <img src="/images/projects/camera.webp" alt="camera and football scarf">
+                <div class="overlay-text">camera and football scarf</div>
+            </div>
+    
+        </div>
+    
+        <div class="popup">
+            <span>&times;</span>
+            <img src="" alt="popup-image">
+        </div>
+    
+    </section>
+    
+
+    <!-- <script src="/app.js"></script> -->
+     <script>
+        document.querySelectorAll('.photo-grid .image img').forEach(image => {
+    image.onclick = () => {
+        const popup = document.querySelector('.popup');
+        const popupImage = document.querySelector('.popup img');
+
+        popup.style.display = 'block';
+        popupImage.src = image.getAttribute('src');
+    };
+});
+
+document.querySelector('.popup span').onclick = () => {
+    document.querySelector('.popup').style.display = 'none';
+};
+     </script>
 
     
 
