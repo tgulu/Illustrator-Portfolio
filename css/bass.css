@@ -1,6 +1,8 @@
 
    
 .image {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,17 +20,42 @@
 }
 
 .image img {
+  display: block;
   height: 100%;
   width: 100%;
-  object-fit:contain;
-  transition: 0.4s linear;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.image .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  font-family: luminari;
+}
+
+.image:hover img {
+  opacity: 0; /* Hide the image on hover */
 }
 
 .image:hover {
   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
     rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-3px) scale(1.1);
+  background-color:var(--color-lightpink);
 }
+
+.image:hover .overlay-text {
+  opacity: 1; /* Show the text on hover */
+}
+
 
 @media screen and (min-width: 1280px) {
   .image {
