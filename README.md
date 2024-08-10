@@ -10,6 +10,9 @@ Personal Portfolio Website showcasing the work, projects, and portfolio of Ieuan
 - HTML
 - JavaScript (ES6)
 - CSS
+- NodeJS
+- Express
+- Axios
 
 ## Features
 Home Page: Introduction to Ieuan Garrish, featuring a brief biography and an overview of the site.
