@@ -1,0 +1,84 @@
+
+   
+.image {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(249, 248, 248, 0.2) 0px 0.15rem 1.2rem,
+    rgba(30, 87, 201, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 500ms;
+  padding: 0 1.3rem;
+  margin-top: 0.9rem;
+  transform: scale(0.98);
+  transition: all 0.7s ease;
+}
+
+.image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.image .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  font-family: luminari;
+}
+
+.image:hover img {
+  opacity: 0; /* Hide the image on hover */
+}
+
+.image:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+  background-color:var(--color-lightpink);
+}
+
+.image:hover .overlay-text {
+  opacity: 1; /* Show the text on hover */
+}
+
+
+
+@media screen and (max-width: 300px) {
+  .image {
+    transform: scale(0.38);
+  }
+
+  .image:hover {
+    transform: translateY(-1.05px) scale(1);
+  }
+
+  .image:hover {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .image {
+    transform: scale(1.0);
+  }
+
+  .image:hover {
+    transform: translateX(-1.05px) scale(1.05);
+  }
+}
