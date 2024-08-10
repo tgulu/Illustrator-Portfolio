@@ -40,7 +40,7 @@
                             <li><a href="/html/sport.html">Lost Grounds</a></li>
                             <li><a href="/html/merchandise.html">Packaging Designs</a></li>
                             <li> <a href="#">Graphics</a></li>
-                            <!-- <li><a href="/html/project.html" >On Going Projects</a></li> -->
+                            <li><a href="/html/project.html" >On Going Projects</a></li>
                         </ul>
                     </li>
                     <li><a href="/html/shop.html"class="nav-link">Shop</a></li>
@@ -55,34 +55,6 @@
             </div>
         </header>
     </section>
-
-
-    <!-- <section>
-        <div class="container">
-    
-            <div class="image-container">
-                <h1>Graphics</h1>
-                <div class="image"> </div>
-                <div class="image"> <img src="/images/graphics/blLogo.webp" alt="bl logo"></div>
-                <div class="image"> <img src="/images/graphics/ojoLogo.webp" alt="ojo simple logo"></div>
-                <div class="image"> <img src="/images/graphics/blProductions.webp" alt="wembly stadium">
-                </div>
-                <div class="image"> <img src="/images/graphics/kindessLogo.webp" alt="kindness logo on products">
-                </div>
-
-                <div class="image"> <img src="/images/graphics/icemanSimple.webp" alt="ice man simple logo"></div>
-
-                <div class="image"> <img src="/images/graphics/supremeScents.webp" alt="super scenet logo"></div>
-            </div>
-           
-            <div class="popup">
-                <span>&times;</span>
-                <img src="/images/sports/cardiff.jpg" alt="popup-image">
-            </div>
-
-        </div>
-       
-    </section> -->
 
     <section>
         <h1 id="title">On Going Projects</h1>
@@ -158,23 +130,7 @@
     
     </section>
     
-
-    <!-- <script src="/app.js"></script> -->
-     <script>
-        document.querySelectorAll('.photo-grid .image img').forEach(image => {
-    image.onclick = () => {
-        const popup = document.querySelector('.popup');
-        const popupImage = document.querySelector('.popup img');
-
-        popup.style.display = 'block';
-        popupImage.src = image.getAttribute('src');
-    };
-});
-
-document.querySelector('.popup span').onclick = () => {
-    document.querySelector('.popup').style.display = 'none';
-};
-     </script>
+     <script src ='/js/popup.js'></script>
 
     
 
