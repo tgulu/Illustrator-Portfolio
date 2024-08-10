@@ -17,8 +17,10 @@
 
 
     <style>
-        @import url('/css/categories.css');
         @import url('/css/nav.css');
+        @import url('/css/base.css');
+        @import url('/css/photogrid.css');
+        @import url('/css/popup.css');
     </style>
 </head>
 
@@ -38,13 +40,13 @@
                             <li><a href="/html/sport.html">Lost Grounds</a></li>
                             <li><a href="/html/merchandise.html">Packaging Designs</a></li>
                             <li> <a href="/html/graphic.html">Graphics</a></li>
-                            <li><a href="/html/project.html" >On Going Projects</a></li>
+                            <li><a href="/html/project.html">On Going Projects</a></li>
                         </ul>
                     </li>
-                    <li><a href="/html/shop.html"class="nav-link">Shop</a></li>
+                    <li><a href="/html/shop.html" class="nav-link">Shop</a></li>
                     <li><a href="/html/contact.html" class="nav-link">Contact</a></li>
                 </ul>
-    
+
             </nav>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -55,35 +57,60 @@
     </section>
 
 
+
     <section>
-        <div class="container">
-    
-            <div class="image-container">
-                <h1>Publishing Covers</h1>
-                <div class="image"><img src="/images/publishing/pyscho.webp" alt="pyscho book cover"></div>
+        <h1 id="title">On Going Projects</h1>
 
-                <div class="image"><img src="/images/publishing/junglebook.webp" alt="jungle book cover"></div>
+        <div class="photo-grid">
 
-                <div class="image"><img src="/images/publishing/gardner.webp" alt="garder book cover"></div>
-
-                <div class="image"><img src="/images/publishing/titainic.webp" alt="titainic film poster"></div>
-
-                <div class="image"><img src="/images/publishing/areoplane.webp" alt="areoplane poster"></div>
-
-                <div class="image"><img src="/images/publishing/lostgrounds.webp" alt="lost grounds book cover"></div>
+            <div class="image image-wide image-tall">
+                <img src="/images/publishing/pyscho.webp" alt="pyscho book cover">
+                <div class="overlay-text">pyscho</div>
             </div>
+
+            <div class="image ">
+                <img src="/images/publishing/junglebook.webp" alt="jungle book cover">
+                <div class="overlay-text">jungle book</div>
+            </div>
+
+
+            <div class="image image-tall">
+                <img src="/images/publishing/gardner.webp" alt="gardner book cover">
+                <div class="overlay-text">gardner book</div>
+            </div>
+
+
+            <div class="image">
+                <img src="/images/publishing/titainic.webp" alt="titainic film poster">
+                <div class="overlay-text">titainic 1997</div>
+            </div>
+
+            <div class="image">
+                <img src="/images/publishing/lostgrounds.webp" alt="lost grounds book cover">
+                <div class="overlay-text">lostgrounds</div>
+            </div>
+
+            <div class="image image-tall image-wide">
+                <img src="/images/publishing/areoplane.webp" alt="areoplane poster">
+                <div class="overlay-text">areoplane</div>
+            </div>
+
            
-            <div class="popup">
-                <span>&times;</span>
-                <img src="/images/sports/cardiff.jpg" alt="popup-image">
-            </div>
 
+            
         </div>
-       
-    </section>
-    <!-- <footer id="footer"> -->
 
-    <script src="/app.js"></script>
+
+
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="" alt="popup-image">
+        </div>
+
+    </section>
+
+    <script src='/js/popup.js'></script>
 
 
 
