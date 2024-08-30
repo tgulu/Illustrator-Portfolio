@@ -89,7 +89,7 @@ p {
     margin-bottom: 10px;
   }
 
-  .text-box3{
+  .text-box3 {
     background-color: rgba(255, 255, 255, 0.7.8);
     padding: 2px;
   }
@@ -102,26 +102,29 @@ p {
   /* .about .hero-text h1 {
     font-size: 34px;
   } */
-
-
 }
 
 @media screen and (max-width: 678px) {
   .background-img {
     /* change to mobile version */
     background-image: url("/images/title/titleMobile.jpg");
-    background-size: 94%;
-    background-position: 100% 130%;
+    background-size: 98%;
+    background-position: 40% 100%;
     height: calc(95vh - 20px);
     width: 100%;
     background-repeat: no-repeat;
   }
 
- .hero-text,  .text-box1 h1 {
-  position: absolute;
-  font-size: 40px;
-  margin-top: 5px;
-  max-width: 90%;
+  .text-box1{
+    display: none;
+  }
+
+  .hero-text,
+  .text-box1 h1 {
+    position: absolute;
+    font-size: 40px;
+    margin-top: 5px;
+    max-width: 90%;
   }
   .text-box2 {
     display: none;
@@ -130,7 +133,7 @@ p {
   .text-box3 {
     display: block;
     position: relative;
-}
+  }
 
   .about .hero-text p {
     margin-top: 50px;
@@ -140,19 +143,10 @@ p {
     font-size: 18px;
     align-items: center;
     word-spacing: 3px;
-
-
-
   }
-
-
-
 }
 
-
-
 @media screen and (min-width: 1440px) {
-
   .about .hero-text {
     left: 0%;
     top: 35%;
@@ -167,7 +161,6 @@ p {
     font-size: 70px;
   }
 
-
   .background-img {
     height: 90vh;
   }
@@ -178,7 +171,6 @@ p {
 }
 
 @media screen and (min-width: 1920px) {
-
   .background-img {
     background-image: url("/images/title/titleBubbleSpeech.webp");
     background-size: 100%;
@@ -186,7 +178,6 @@ p {
     height: 93vh;
     background-position: 100% 100%;
   }
-
 
   /* .text-box2 {
     position: absolute;
@@ -208,15 +199,12 @@ p {
   .about .hero-text h1 {
     font-size: 75px;
   }
-
 }
 
 @media screen and (min-width: 2000px) {
-
   .background-img {
     background-size: 98%;
   }
-
 
   .text-box2 {
     padding: 10px;
@@ -237,12 +225,10 @@ p {
   }
 }
 
-
 @media screen and (min-width: 2360) {
   .background-img {
     background-size: 98%;
   }
-
 
   .text-box2 {
     padding: 10px;
