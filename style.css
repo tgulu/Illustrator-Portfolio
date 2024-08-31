@@ -105,11 +105,16 @@ p {
 }
 
 @media screen and (max-width: 678px) {
+
+/* .about{
+  height: var(--main);
+} */
+
   .background-img {
     background-image: url("/images/title/titleMobile.jpg");
     background-size: 100%;
     /* background-position: 90% 100%; */
-    height: calc(95vh - 20px);
+    height: calc(90vh - 20px);
     width: 100%;
     background-repeat: no-repeat;
   }
