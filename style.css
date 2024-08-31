@@ -83,32 +83,8 @@ p {
   animation-delay: 1.3s;
 }
 
-@media screen and (min-width: 350px) {
-  /* .text-box1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .text-box3 {
-    background-color: rgba(255, 255, 255, 0.7.8);
-    padding: 2px;
-  } */
-
-  /* .about .hero-text {
-    margin-top: 10px;
-    max-width: 60%;
-  } */
-
-  /* .about .hero-text h1 {
-    font-size: 34px;
-  } */
-}
-
 @media screen and (max-width: 678px) {
 
-/* .about{
-  height: var(--main);
-} */
 
   .background-img {
     background-image: url("/images/title/titleMobile.jpg");
