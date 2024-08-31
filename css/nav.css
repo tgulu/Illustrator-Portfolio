@@ -30,6 +30,13 @@
   font-family: "luminari", "Hedvig", "Arial", "Helvetica", "sans-serif";
 }
 
+body {
+  overflow: auto;
+}
+body.menu-open {
+  overflow: hidden;
+} 
+
 /* NavBar */
 
 #header {
@@ -210,7 +217,8 @@
     position: absolute;
     z-index: 100;
     width: 100%;
-    height: var(--main);
+    /* height: var(--main); */
+    height: calc(var(--main) + var(--footer));
     top: 66px;
     left: -100%;
     background: var(--color-black);
