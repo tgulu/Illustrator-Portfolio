@@ -13,21 +13,21 @@
   --color-salmonpink: #ffe0e0; 
   --color-lightpink:  #ffc0d0;
   --color-pastelgreen: #efdfbf; 
-
   /* --background-gradient: linear-gradient(0.25turn, #4f3fa6, #000000, #f63cf6); */
   --background-gradient: linear-gradient( 0, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
 
+}
+
+@font-face {
+  font-family: luminari;
+  src: url("/fonts/Luminari-Regular.ttf");
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-@font-face {
-  font-family: luminari;
-  src: url("/fonts/Luminari-Regular.ttf");
+  font-family: "luminari", "Hedvig", "Arial", "Helvetica", "sans-serif";
 }
 
 /* NavBar */
