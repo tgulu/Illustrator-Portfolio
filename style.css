@@ -1,6 +1,7 @@
 .about {
   height: 40vh;
   position: relative;
+  /* width: 100%; */
 }
 
 .background-img {
@@ -66,13 +67,12 @@
 p {
   width: 1rem;
   text-align: justify;
-  /* text-align-last: justify; */
 }
 
 .about .hero-text p,
-.text-box1,
-.text-box2,
-.about .hero-text h1 {
+.about .hero-text h1,
+.about .hero-text figcaption
+ {
   transform: translateY(30px);
   filter: blur(20px);
   opacity: 0;
@@ -84,7 +84,7 @@ p {
 }
 
 @media screen and (min-width: 350px) {
-  .text-box1 {
+  /* .text-box1 {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -92,7 +92,7 @@ p {
   .text-box3 {
     background-color: rgba(255, 255, 255, 0.7.8);
     padding: 2px;
-  }
+  } */
 
   /* .about .hero-text {
     margin-top: 10px;
@@ -107,41 +107,42 @@ p {
 @media screen and (max-width: 678px) {
   .background-img {
     background-image: url("/images/title/titleMobile.jpg");
-    background-size: 105%;
-    background-position: 80% 120%;
+    background-size: 100%;
+    /* background-position: 90% 100%; */
     height: calc(95vh - 20px);
-    width: 98%;
+    width: 100%;
     background-repeat: no-repeat;
-  }
-
-  .text-box1{
-    display: none;
   }
 
   .hero-text,
   .text-box1 h1 {
     position: absolute;
-    font-size: 40px;
-    margin-top: 5px;
+    font-size: 50px;
+    margin-top: 6px;
     max-width: 90%;
   }
   .text-box2 {
     display: none;
   }
 
-  .text-box3 {
-    display: block;
-    position: relative;
+
+  .hero-text {
+    position: absolute;
   }
 
   .about .hero-text p {
-    margin-top: 50px;
-    margin-left: 10px;
-    position: absolute;
-    width: 90%;
-    font-size: 18px;
-    align-items: center;
-    word-spacing: 3px;
+    position: relative;
+    top: -40px;
+    width: 100%;
+    font-size: 22px;
+    word-spacing: 3.7px;
+  }
+  figcaption{
+    position: relative;
+    font-size: 22px;
+    top: -43px;
+    left: 130px;
+
   }
 }
 
