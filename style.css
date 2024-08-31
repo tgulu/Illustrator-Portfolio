@@ -90,7 +90,7 @@ p {
     background-image: url("/images/title/titleMobile.jpg");
     background-size: 100%;
     /* background-position: 90% 100%; */
-    height: calc(90vh - 20px);
+    height: calc(90vh - 15px);
     width: 100%;
     background-repeat: no-repeat;
   }
