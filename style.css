@@ -134,16 +134,10 @@ p {
     position: relative;
     top: -40px;
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
     word-spacing: 3.7px;
   }
-  figcaption{
-    position: relative;
-    font-size: 22px;
-    top: -43px;
-    left: 130px;
 
-  }
 }
 
 @media screen and (min-width: 1440px) {
