@@ -143,6 +143,11 @@ const cartTotal = () => {
     totalPriceElement.innerHTML = totalPrice.toFixed(2);
 };
 
+// export cartTotal to be sent to the paypal payment page
+module.exports.cartTotal = cartTotal;
+
+
+
 // Event listener to handle quantity changes in the cart
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
