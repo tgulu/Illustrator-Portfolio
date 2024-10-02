@@ -83,7 +83,7 @@ p {
   animation-delay: 1.3s;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 667px) {
 
 
   .background-img {
@@ -123,8 +123,10 @@ p {
 
 @media screen and (min-width: 1440px) {
   .about .hero-text {
+    /* background-color: green; */
     left: 0%;
-    top: 35%;
+    top: 10%;
+    height: 50px;
   }
 
   .about .hero-text p {
@@ -134,6 +136,7 @@ p {
 
   .about .hero-text h1 {
     font-size: 70px;
+    padding-top: 25px;
   }
 
   .background-img {
