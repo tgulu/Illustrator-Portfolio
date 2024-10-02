@@ -42,15 +42,8 @@
   width: 900px;
   z-index: 1;
 }
-/* 
-.about .hero-text p {
-  font-size: 20px;
-  width: 550px;
-} */
 
 .about .hero-text h1 {
-  /* font-size: 110px;
-  margin: 0; */
   color: #b8b7b7;
   font-family: luminari;
   text-transform: uppercase;
@@ -86,14 +79,17 @@ p {
   .background-img {
     background-image: url("/images/title/titleMobile.jpg");
     background-size: 100%;
-    /* background-position: 90% 100%; */
     height: calc(90vh - 15px);
     width: 100%;
     background-repeat: no-repeat;
   }
 
   .text-box1 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-size: 15px;
   }
 
   .hero-text,
@@ -115,7 +111,7 @@ p {
     position: relative;
     top: -40px;
     width: 100%;
-    font-size: 20px;
+    font-size: 10px;
     word-spacing: 3.7px;
   }
 }
@@ -207,7 +203,7 @@ p {
   }
 }
 
-@media screen and (min-width: 2360) {
+@media screen and (min-width: 2360px) {
   .background-img {
     background-size: 98%;
   }
