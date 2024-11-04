@@ -4,7 +4,7 @@ https://ieuangarrish.com/
 
 ## Description
 
-Personal Portfolio Website showcasing the work, projects, and portfolio of Ieuan Garrish. This
+Personal Portfolio Website showcasing the work, projects, and portfolio of Ieuan Garrish.
 
 ## Technologies Used
 
