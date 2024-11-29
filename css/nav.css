@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "luminari", "Hedvig", "Arial", "Helvetica", "sans-serif";
+}
+
+@font-face {
+  font-family: luminari;
+  src: url("/fonts/Luminari-Regular.ttf");
+}
+
+body {
+  overflow: auto;
+}
+body.menu-open {
+  overflow: hidden;
+}
+
 :root {
   --header: 66px;
   --small-header: 44px;
@@ -9,33 +28,13 @@
   --color-black: #010101;
   --color-grey: #bababaad;
   --color-red: #ff0606ad;
-  --color-offwhite: #fffafa; 
-  --color-salmonpink: #ffe0e0; 
-  --color-lightpink:  #ffc0d0;
-  --color-pastelgreen: #efdfbf; 
+  --color-offwhite: #fffafa;
+  --color-salmonpink: #ffe0e0;
+  --color-lightpink: #ffc0d0;
+  --color-pastelgreen: #efdfbf;
   /* --background-gradient: linear-gradient(0.25turn, #4f3fa6, #000000, #f63cf6); */
-  --background-gradient: linear-gradient( 0, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
-
+  --background-gradient: linear-gradient(0, #fffafa, #ffe0e0, #ffc0d0, #efdfbf);
 }
-
-@font-face {
-  font-family: luminari;
-  src: url("/fonts/Luminari-Regular.ttf");
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "luminari", "Hedvig", "Arial", "Helvetica", "sans-serif";
-}
-
-body {
-  overflow: auto;
-}
-body.menu-open {
-  overflow: hidden;
-} 
 
 /* NavBar */
 
@@ -262,7 +261,6 @@ body.menu-open {
     padding-right: 30rem;
   }
 }
-
 
 @media screen and (min-width: 2000px) {
   .nav-logo {
