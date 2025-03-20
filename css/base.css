@@ -1,5 +1,3 @@
-
-   
 .image {
   position: relative;
   overflow: hidden;
@@ -36,7 +34,7 @@
   font-size: 35px;
   font-weight: bold;
   text-align: center;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.3s ease;
   font-family: luminari;
   text-transform: up;
@@ -47,18 +45,15 @@
 }
 
 .image:hover {
-  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
-    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
   transform: translateY(-1.2px) scale(0.9);
+  opacity: 0.6;
 
-  background:var(--background-gradient);
+  /* background:var(--background-gradient); */
 }
 
 .image:hover .overlay-text {
   opacity: 1; /* Show the text on hover */
 }
-
-
 
 @media screen and (max-width: 300px) {
   .image {
@@ -74,10 +69,9 @@
   }
 }
 
-
 @media screen and (min-width: 1280px) {
   .image {
-    transform: scale(1.0);
+    transform: scale(1);
   }
 
   .image:hover {
