@@ -1,7 +1,6 @@
 # Photography Portfolio
 
-URL:
-https://ieuangarrish.com/
+URL:https://ieuangarrish.com/
 
 ## Description
 
